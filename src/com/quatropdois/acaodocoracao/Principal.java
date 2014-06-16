@@ -24,6 +24,7 @@ public class Principal extends Activity {
     public void init()
     {
     	mainActivity = new Intent(getApplicationContext(), MainActivity.class);
+//    	mainActivity = new Intent(getApplicationContext(), TexturaActivity.class);
         wasExecuted = false;
     }
     

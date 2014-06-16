@@ -2,6 +2,7 @@ package com.quatropdois.acaodocoracao;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,7 @@ public class TexturaActivity extends Activity
     private boolean wasExecuted = false;
     public TextView t;
     
-    public static int coracao;
+    private int coracao = 0;
     
     sharedPreference qtdUso;
     
@@ -26,7 +27,6 @@ public class TexturaActivity extends Activity
 						viewIMG6, 
 						viewIMG7, 
 						viewIMG8;
-    
     
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -61,6 +61,10 @@ public class TexturaActivity extends Activity
         viewIMG8 = (ImageView)findViewById(R.id.img8);
         
 //        qtd = qtdUso.getInt("qtduso");
+        
+        Intent iin = getIntent();
+        Bundle extras = iin.getExtras();
+        coracao = (int) extras.getInt("coracao");
         
     }
     
@@ -175,10 +179,6 @@ public class TexturaActivity extends Activity
         		viewIMG8 .setVisibility(View.VISIBLE);
 	          break;
 	      }
-        	
-//        	Log.v(null, "countdown started");
-//    	    wasExecuted = true;
-//    	    new CountDownTask().execute();
         }
     }
     

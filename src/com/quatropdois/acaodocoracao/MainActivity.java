@@ -4,6 +4,7 @@ package com.quatropdois.acaodocoracao;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -13,11 +14,8 @@ public class MainActivity extends Activity
     
     private boolean wasExecuted = false;
     
-    public static int coracao;
-    
-    
-//    private Intent main;
-//    
+    private int coracao = 0;
+      
 //    private int qtd;
     
     sharedPreference qtdUso;
@@ -32,6 +30,8 @@ public class MainActivity extends Activity
 						viewIMG8;
     
 	private	Button	btnNext;
+	
+	private Intent nextScreen;
     
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -39,6 +39,8 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainactivity);
         init();
+//        nextScreen = new Intent(getApplicationContext(), TexturaActivity.class);
+    	nextScreen = new Intent(getApplicationContext(), TexturaActivity.class);
     }
     
     public void init()
@@ -177,10 +179,6 @@ public class MainActivity extends Activity
 	          break;
 	          
 	      }
-        
-//        	Log.v(null, "countdown started");
-//    	    wasExecuted = true;
-//    	    new CountDownTask().execute();
         }
     }
    
@@ -193,11 +191,14 @@ public class MainActivity extends Activity
     }
     
     
-    public void onNextButton(){
-    	
-    	Intent nextScreen = new Intent(MainActivity.this, TexturaActivity.class);
-//    	myIntent.putExtra("key", coracao); //Optional parameters
-    	MainActivity.this.startActivity(nextScreen);
+    public void onNextButton(View view){
+    	if(!wasExecuted){
+        	Log.v(null, "countdown started");
+    	    wasExecuted = true;
+        	nextScreen.putExtra("coracao", coracao);
+        	startActivity(nextScreen);
+        }
+//    	MainActivity.this.startActivity(nextScreen);
     }
     
 }

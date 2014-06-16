@@ -17,12 +17,14 @@ public class SelectCoracao extends TexturaActivity {
 	
 	public	Button	btnNext;
 	
+//	private int coracao = 0;
+	
 	public void selectCoracao(View view)
     {
         	switch(view.getId()) {
         	
 	        case R.id.imgBtn1:
-	        	coracao = 1;
+//	        	coracao = 1;
         		System.out.println("CORACAO1");
         		viewIMG1 .setVisibility(View.VISIBLE);
         		viewIMG2 .setVisibility(View.INVISIBLE);
@@ -36,7 +38,7 @@ public class SelectCoracao extends TexturaActivity {
 	          break;
 	          
 	        case R.id.imgBtn2:
-	        	coracao = 2;
+//	        	coracao = 2;
         		System.out.println("CORACAO2");
         		viewIMG1 .setVisibility(View.INVISIBLE);
         		viewIMG2 .setVisibility(View.VISIBLE);
@@ -50,7 +52,7 @@ public class SelectCoracao extends TexturaActivity {
 	          break;
 	          
 	        case R.id.imgBtn3:
-	        	coracao = 3;
+//	        	coracao = 3;
         		System.out.println("CORACAO3");
         		viewIMG1 .setVisibility(View.INVISIBLE);
         		viewIMG2 .setVisibility(View.INVISIBLE);
@@ -64,7 +66,7 @@ public class SelectCoracao extends TexturaActivity {
 	          break;
 	          
 	        case R.id.imgBtn4:
-	        	coracao = 4;
+//	        	coracao = 4;
         		System.out.println("CORACAO4");
         		viewIMG1 .setVisibility(View.INVISIBLE);
         		viewIMG2 .setVisibility(View.INVISIBLE);
@@ -77,7 +79,7 @@ public class SelectCoracao extends TexturaActivity {
 	          break;
 	          
 	        case R.id.imgBtn5:
-	        	coracao = 5;
+//	        	coracao = 5;
         		System.out.println("CORACAO5");
         		viewIMG1 .setVisibility(View.INVISIBLE);
         		viewIMG2 .setVisibility(View.INVISIBLE);
@@ -90,7 +92,7 @@ public class SelectCoracao extends TexturaActivity {
 	          break;
 	          
 	        case R.id.imgBtn6:
-	        	coracao = 6;
+//	        	coracao = 6;
         		System.out.println("CORACAO6");
         		viewIMG1 .setVisibility(View.INVISIBLE);
         		viewIMG2 .setVisibility(View.INVISIBLE);
@@ -103,7 +105,7 @@ public class SelectCoracao extends TexturaActivity {
 	          break;
 	          
 	        case R.id.imgBtn7:
-	        	coracao = 7;
+//	        	coracao = 7;
         		System.out.println("CORACAO7");
         		viewIMG1 .setVisibility(View.INVISIBLE);
         		viewIMG2 .setVisibility(View.INVISIBLE);
@@ -116,7 +118,7 @@ public class SelectCoracao extends TexturaActivity {
 	          break;
 	          
 	        case R.id.imgBtn8:
-	        	coracao = 8;
+//	        	coracao = 8;
         		System.out.println("CORACAO8");
         		viewIMG1 .setVisibility(View.INVISIBLE);
         		viewIMG2 .setVisibility(View.INVISIBLE);
