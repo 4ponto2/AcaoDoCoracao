@@ -87,6 +87,15 @@
         </LinearLayout>
     </HorizontalScrollView>
 
+    
+    <ImageView
+        android:id="@+id/img_cor"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+        
     <ImageView
         android:id="@+id/img1"
         android:layout_width="200dp"
@@ -94,7 +103,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:src="@drawable/img1"
-        android:visibility="invisible" />
+        android:visibility="gone" />
         
         <ImageView
         android:id="@+id/img2"
@@ -102,7 +111,7 @@
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:visibility="invisible" 
+        android:visibility="gone" 
         android:src="@drawable/img2" />
         
         <ImageView
@@ -111,7 +120,7 @@
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:visibility="invisible" 
+        android:visibility="gone" 
         android:src="@drawable/img3" />
         
         <ImageView
@@ -120,7 +129,7 @@
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:visibility="invisible" 
+        android:visibility="gone" 
         android:src="@drawable/img4" />
         
         <ImageView
@@ -129,7 +138,7 @@
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:visibility="invisible" 
+        android:visibility="gone" 
         android:src="@drawable/img5" />
         
         <ImageView
@@ -138,7 +147,7 @@
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:visibility="invisible" 
+        android:visibility="gone" 
         android:src="@drawable/img6" />
         
         <ImageView
@@ -147,7 +156,7 @@
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:visibility="invisible" 
+        android:visibility="gone" 
         android:src="@drawable/img7" />
         
         <ImageView
@@ -156,7 +165,7 @@
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:visibility="invisible" 
+        android:visibility="gone" 
         android:src="@drawable/img8" />
 
         <ImageView

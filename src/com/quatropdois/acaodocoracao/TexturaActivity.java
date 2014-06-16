@@ -1,6 +1,8 @@
 package com.quatropdois.acaodocoracao;
 
 
+import com.quatropdois.acaodocoracao.R.drawable;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -20,7 +22,8 @@ public class TexturaActivity extends Activity
     
     sharedPreference qtdUso;
     
-	public ImageView 	viewIMG1, 
+	public ImageView	viewCor,
+						viewIMG1, 
 						viewIMG2, 
 						viewIMG3, 
 						viewIMG4, 
@@ -28,6 +31,8 @@ public class TexturaActivity extends Activity
 						viewIMG6, 
 						viewIMG7, 
 						viewIMG8;
+	
+	Texturas texturas;
     
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -35,10 +40,7 @@ public class TexturaActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.textura_activity);
         init();
-        coracaoescolhido();
-    }
-    public void coracaoescolhido(){
-    	Toast.makeText(getApplicationContext(), "coracao escolhido:" + coracao, Toast.LENGTH_LONG).show();
+        texturas = new Texturas(this);
     }
     public void init()
     {
@@ -47,6 +49,8 @@ public class TexturaActivity extends Activity
         wasExecuted = false;
         
         qtdUso = new sharedPreference(getApplicationContext());
+
+        viewCor  = (ImageView)findViewById(R.id.img_cor);
         
         viewIMG1 = (ImageView)findViewById(R.id.img1);
         
@@ -69,89 +73,114 @@ public class TexturaActivity extends Activity
         Intent iin = getIntent();
         Bundle extras = iin.getExtras();
         coracao = (int) extras.getInt("coracao");
-        
-        switch (coracao){
+
+        switch (coracao) {
         case 1:
-    		viewIMG1 .setVisibility(View.VISIBLE);
-    		viewIMG2 .setVisibility(View.INVISIBLE);
-    		viewIMG3 .setVisibility(View.INVISIBLE);
-    		viewIMG4 .setVisibility(View.INVISIBLE);
-    		viewIMG5 .setVisibility(View.INVISIBLE);
-    		viewIMG6 .setVisibility(View.INVISIBLE);
-    		viewIMG7 .setVisibility(View.INVISIBLE);
-    		viewIMG8 .setVisibility(View.INVISIBLE);
-        
+        	viewCor.setImageResource(R.drawable.img1);
+        	viewCor.setVisibility(View.VISIBLE);
+//    		viewIMG1 .setVisibility(View.VISIBLE);
+//    		viewIMG2 .setVisibility(View.INVISIBLE);
+//    		viewIMG3 .setVisibility(View.INVISIBLE);
+//    		viewIMG4 .setVisibility(View.INVISIBLE);
+//    		viewIMG5 .setVisibility(View.INVISIBLE);
+//    		viewIMG6 .setVisibility(View.INVISIBLE);
+//    		viewIMG7 .setVisibility(View.INVISIBLE);
+//    		viewIMG8 .setVisibility(View.INVISIBLE);
+			break;
         case 2:
-    		viewIMG1 .setVisibility(View.INVISIBLE);
-    		viewIMG2 .setVisibility(View.VISIBLE);
-    		viewIMG3 .setVisibility(View.INVISIBLE);
-    		viewIMG4 .setVisibility(View.INVISIBLE);
-    		viewIMG5 .setVisibility(View.INVISIBLE);
-    		viewIMG6 .setVisibility(View.INVISIBLE);
-    		viewIMG7 .setVisibility(View.INVISIBLE);
-    		viewIMG8 .setVisibility(View.INVISIBLE);
-    		
+        	viewCor.setImageResource(R.drawable.img2);
+        	viewCor.setVisibility(View.VISIBLE);
+//    		viewIMG1 .setVisibility(View.INVISIBLE);
+//    		viewIMG2 .setVisibility(View.VISIBLE);
+//    		viewIMG3 .setVisibility(View.INVISIBLE);
+//    		viewIMG4 .setVisibility(View.INVISIBLE);
+//    		viewIMG5 .setVisibility(View.INVISIBLE);
+//    		viewIMG6 .setVisibility(View.INVISIBLE);
+//    		viewIMG7 .setVisibility(View.INVISIBLE);
+//    		viewIMG8 .setVisibility(View.INVISIBLE);
+        	break;
+        	
         case 3:
-    		viewIMG1 .setVisibility(View.INVISIBLE);
-    		viewIMG2 .setVisibility(View.INVISIBLE);
-    		viewIMG3 .setVisibility(View.VISIBLE);
-    		viewIMG4 .setVisibility(View.INVISIBLE);
-    		viewIMG5 .setVisibility(View.INVISIBLE);
-    		viewIMG6 .setVisibility(View.INVISIBLE);
-    		viewIMG7 .setVisibility(View.INVISIBLE);
-    		viewIMG8 .setVisibility(View.INVISIBLE);
-    		
+        	viewCor.setImageResource(R.drawable.img3);
+        	viewCor.setVisibility(View.VISIBLE);
+//    		viewIMG1 .setVisibility(View.INVISIBLE);
+//    		viewIMG2 .setVisibility(View.INVISIBLE);
+//    		viewIMG3 .setVisibility(View.VISIBLE);
+//    		viewIMG4 .setVisibility(View.INVISIBLE);
+//    		viewIMG5 .setVisibility(View.INVISIBLE);
+//    		viewIMG6 .setVisibility(View.INVISIBLE);
+//    		viewIMG7 .setVisibility(View.INVISIBLE);
+//    		viewIMG8 .setVisibility(View.INVISIBLE);        	
+        	break;
+        	
         case 4:
-    		viewIMG1 .setVisibility(View.INVISIBLE);
-    		viewIMG2 .setVisibility(View.INVISIBLE);
-    		viewIMG3 .setVisibility(View.INVISIBLE);
-    		viewIMG4 .setVisibility(View.VISIBLE);
-    		viewIMG5 .setVisibility(View.INVISIBLE);
-    		viewIMG6 .setVisibility(View.INVISIBLE);
-    		viewIMG7 .setVisibility(View.INVISIBLE);
-    		viewIMG8 .setVisibility(View.INVISIBLE);
-    		
+        	viewCor.setImageResource(R.drawable.img4);
+        	viewCor.setVisibility(View.VISIBLE);
+//    		viewIMG1 .setVisibility(View.INVISIBLE);
+//    		viewIMG2 .setVisibility(View.INVISIBLE);
+//    		viewIMG3 .setVisibility(View.INVISIBLE);
+//    		viewIMG4 .setVisibility(View.VISIBLE);
+//    		viewIMG5 .setVisibility(View.INVISIBLE);
+//    		viewIMG6 .setVisibility(View.INVISIBLE);
+//    		viewIMG7 .setVisibility(View.INVISIBLE);
+//    		viewIMG8 .setVisibility(View.INVISIBLE);
+        	break;
+        	
         case 5:
-    		viewIMG1 .setVisibility(View.INVISIBLE);
-    		viewIMG2 .setVisibility(View.INVISIBLE);
-    		viewIMG3 .setVisibility(View.INVISIBLE);
-    		viewIMG4 .setVisibility(View.INVISIBLE);
-    		viewIMG5 .setVisibility(View.VISIBLE);
-    		viewIMG6 .setVisibility(View.INVISIBLE);
-    		viewIMG7 .setVisibility(View.INVISIBLE);
-    		viewIMG8 .setVisibility(View.INVISIBLE);
-    		
+        	viewCor.setImageResource(R.drawable.img5);
+        	viewCor.setVisibility(View.VISIBLE);
+//    		viewIMG1 .setVisibility(View.INVISIBLE);
+//    		viewIMG2 .setVisibility(View.INVISIBLE);
+//    		viewIMG3 .setVisibility(View.INVISIBLE);
+//    		viewIMG4 .setVisibility(View.INVISIBLE);
+//    		viewIMG5 .setVisibility(View.VISIBLE);
+//    		viewIMG6 .setVisibility(View.INVISIBLE);
+//    		viewIMG7 .setVisibility(View.INVISIBLE);
+//    		viewIMG8 .setVisibility(View.INVISIBLE);        	
+        	break;
+        	
         case 6:
-    		viewIMG1 .setVisibility(View.INVISIBLE);
-    		viewIMG2 .setVisibility(View.INVISIBLE);
-    		viewIMG3 .setVisibility(View.INVISIBLE);
-    		viewIMG4 .setVisibility(View.INVISIBLE);
-    		viewIMG5 .setVisibility(View.INVISIBLE);
-    		viewIMG6 .setVisibility(View.VISIBLE);
-    		viewIMG7 .setVisibility(View.INVISIBLE);
-    		viewIMG8 .setVisibility(View.INVISIBLE);
-    		
+        	viewCor.setImageResource(R.drawable.img6);
+        	viewCor.setVisibility(View.VISIBLE);
+//    		viewIMG1 .setVisibility(View.INVISIBLE);
+//    		viewIMG2 .setVisibility(View.INVISIBLE);
+//    		viewIMG3 .setVisibility(View.INVISIBLE);
+//    		viewIMG4 .setVisibility(View.INVISIBLE);
+//    		viewIMG5 .setVisibility(View.INVISIBLE);
+//    		viewIMG6 .setVisibility(View.VISIBLE);
+//    		viewIMG7 .setVisibility(View.INVISIBLE);
+//    		viewIMG8 .setVisibility(View.INVISIBLE);
+        	break;
+        	
         case 7:
-    		viewIMG1 .setVisibility(View.INVISIBLE);
-    		viewIMG2 .setVisibility(View.INVISIBLE);
-    		viewIMG3 .setVisibility(View.INVISIBLE);
-    		viewIMG4 .setVisibility(View.INVISIBLE);
-    		viewIMG5 .setVisibility(View.INVISIBLE);
-    		viewIMG6 .setVisibility(View.INVISIBLE);
-    		viewIMG7 .setVisibility(View.VISIBLE);
-    		viewIMG8 .setVisibility(View.INVISIBLE);
-    		
+        	viewCor.setImageResource(R.drawable.img7);
+        	viewCor.setVisibility(View.VISIBLE);
+//    		viewIMG1 .setVisibility(View.INVISIBLE);
+//    		viewIMG2 .setVisibility(View.INVISIBLE);
+//    		viewIMG3 .setVisibility(View.INVISIBLE);
+//    		viewIMG4 .setVisibility(View.INVISIBLE);
+//    		viewIMG5 .setVisibility(View.INVISIBLE);
+//    		viewIMG6 .setVisibility(View.INVISIBLE);
+//    		viewIMG7 .setVisibility(View.VISIBLE);
+//    		viewIMG8 .setVisibility(View.INVISIBLE);
+        	break;
+        	
         case 8:
-    		viewIMG1 .setVisibility(View.INVISIBLE);
-    		viewIMG2 .setVisibility(View.INVISIBLE);
-    		viewIMG3 .setVisibility(View.INVISIBLE);
-    		viewIMG4 .setVisibility(View.INVISIBLE);
-    		viewIMG5 .setVisibility(View.INVISIBLE);
-    		viewIMG6 .setVisibility(View.INVISIBLE);
-    		viewIMG7 .setVisibility(View.INVISIBLE);
-    		viewIMG8 .setVisibility(View.VISIBLE);
-    		
-        }
+        	viewCor.setImageResource(R.drawable.img8);
+        	viewCor.setVisibility(View.VISIBLE);
+//    		viewIMG1 .setVisibility(View.INVISIBLE);
+//    		viewIMG2 .setVisibility(View.INVISIBLE);
+//    		viewIMG3 .setVisibility(View.INVISIBLE);
+//    		viewIMG4 .setVisibility(View.INVISIBLE);
+//    		viewIMG5 .setVisibility(View.INVISIBLE);
+//    		viewIMG6 .setVisibility(View.INVISIBLE);
+//    		viewIMG7 .setVisibility(View.INVISIBLE);
+//    		viewIMG8 .setVisibility(View.VISIBLE);        	
+        	break;
+        	
+		default:
+			break;
+		}
         
     }
     
@@ -160,128 +189,132 @@ public class TexturaActivity extends Activity
     {
         if(!wasExecuted){
 
-        	switch(view.getId()) {
-        	
-	        case R.id.imgBtn1:
-	        	coracao = 1;
-        		System.out.println("CORACAO1");
-        		viewIMG1 .setVisibility(View.VISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
-	          break;
-	          
-	        case R.id.imgBtn2:
-	        	coracao = 2;
-        		System.out.println("CORACAO2");
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.VISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
-	          break;
-	          
-	        case R.id.imgBtn3:
-	        	coracao = 3;
-        		System.out.println("CORACAO3");
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.VISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
-	          break;
-	          
-	        case R.id.imgBtn4:
-	        	coracao = 4;
-        		System.out.println("CORACAO4");
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.VISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
-	          break;
-	          
-	        case R.id.imgBtn5:
-	        	coracao = 5;
-        		System.out.println("CORACAO5");
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.VISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
-	          break;
-	          
-	        case R.id.imgBtn6:
-	        	coracao = 6;
-        		System.out.println("CORACAO6");
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.VISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
-	          break;
-	          
-	        case R.id.imgBtn7:
-	        	coracao = 7;
-        		System.out.println("CORACAO7");
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.VISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
-	          break;
-	          
-	        case R.id.imgBtn8:
-	        	coracao = 8;
-        		System.out.println("CORACAO8");
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.VISIBLE);
-	          break;
-	      }
+    		System.out.println("select coracao textura");
+        	texturas.texturas(coracao);
+
+//        	switch(view.getId()) {
+//        	
+//	        case R.id.imgBtn1:
+//	        	coracao = 1;
+//        		System.out.println("CORACAO1");
+//        		viewIMG1 .setVisibility(View.VISIBLE);
+//        		viewIMG2 .setVisibility(View.INVISIBLE);
+//        		viewIMG3 .setVisibility(View.INVISIBLE);
+//        		viewIMG4 .setVisibility(View.INVISIBLE);
+//        		viewIMG5 .setVisibility(View.INVISIBLE);
+//        		viewIMG6 .setVisibility(View.INVISIBLE);
+//        		viewIMG7 .setVisibility(View.INVISIBLE);
+//        		viewIMG8 .setVisibility(View.INVISIBLE);
+//	          break;
+//	          
+//	        case R.id.imgBtn2:
+//	        	coracao = 2;
+//        		System.out.println("CORACAO2");
+//        		viewIMG1 .setVisibility(View.INVISIBLE);
+//        		viewIMG2 .setVisibility(View.VISIBLE);
+//        		viewIMG3 .setVisibility(View.INVISIBLE);
+//        		viewIMG4 .setVisibility(View.INVISIBLE);
+//        		viewIMG5 .setVisibility(View.INVISIBLE);
+//        		viewIMG6 .setVisibility(View.INVISIBLE);
+//        		viewIMG7 .setVisibility(View.INVISIBLE);
+//        		viewIMG8 .setVisibility(View.INVISIBLE);
+//	          break;
+//	          
+//	        case R.id.imgBtn3:
+//	        	coracao = 3;
+//        		System.out.println("CORACAO3");
+//        		viewIMG1 .setVisibility(View.INVISIBLE);
+//        		viewIMG2 .setVisibility(View.INVISIBLE);
+//        		viewIMG3 .setVisibility(View.VISIBLE);
+//        		viewIMG4 .setVisibility(View.INVISIBLE);
+//        		viewIMG5 .setVisibility(View.INVISIBLE);
+//        		viewIMG6 .setVisibility(View.INVISIBLE);
+//        		viewIMG7 .setVisibility(View.INVISIBLE);
+//        		viewIMG8 .setVisibility(View.INVISIBLE);
+//	          break;
+//	          
+//	        case R.id.imgBtn4:
+//	        	coracao = 4;
+//        		System.out.println("CORACAO4");
+//        		viewIMG1 .setVisibility(View.INVISIBLE);
+//        		viewIMG2 .setVisibility(View.INVISIBLE);
+//        		viewIMG3 .setVisibility(View.INVISIBLE);
+//        		viewIMG4 .setVisibility(View.VISIBLE);
+//        		viewIMG5 .setVisibility(View.INVISIBLE);
+//        		viewIMG6 .setVisibility(View.INVISIBLE);
+//        		viewIMG7 .setVisibility(View.INVISIBLE);
+//        		viewIMG8 .setVisibility(View.INVISIBLE);
+//	          break;
+//	          
+//	        case R.id.imgBtn5:
+//	        	coracao = 5;
+//        		System.out.println("CORACAO5");
+//        		viewIMG1 .setVisibility(View.INVISIBLE);
+//        		viewIMG2 .setVisibility(View.INVISIBLE);
+//        		viewIMG3 .setVisibility(View.INVISIBLE);
+//        		viewIMG4 .setVisibility(View.INVISIBLE);
+//        		viewIMG5 .setVisibility(View.VISIBLE);
+//        		viewIMG6 .setVisibility(View.INVISIBLE);
+//        		viewIMG7 .setVisibility(View.INVISIBLE);
+//        		viewIMG8 .setVisibility(View.INVISIBLE);
+//	          break;
+//	          
+//	        case R.id.imgBtn6:
+//	        	coracao = 6;
+//        		System.out.println("CORACAO6");
+//        		viewIMG1 .setVisibility(View.INVISIBLE);
+//        		viewIMG2 .setVisibility(View.INVISIBLE);
+//        		viewIMG3 .setVisibility(View.INVISIBLE);
+//        		viewIMG4 .setVisibility(View.INVISIBLE);
+//        		viewIMG5 .setVisibility(View.INVISIBLE);
+//        		viewIMG6 .setVisibility(View.VISIBLE);
+//        		viewIMG7 .setVisibility(View.INVISIBLE);
+//        		viewIMG8 .setVisibility(View.INVISIBLE);
+//	          break;
+//	          
+//	        case R.id.imgBtn7:
+//	        	coracao = 7;
+//        		System.out.println("CORACAO7");
+//        		viewIMG1 .setVisibility(View.INVISIBLE);
+//        		viewIMG2 .setVisibility(View.INVISIBLE);
+//        		viewIMG3 .setVisibility(View.INVISIBLE);
+//        		viewIMG4 .setVisibility(View.INVISIBLE);
+//        		viewIMG5 .setVisibility(View.INVISIBLE);
+//        		viewIMG6 .setVisibility(View.INVISIBLE);
+//        		viewIMG7 .setVisibility(View.VISIBLE);
+//        		viewIMG8 .setVisibility(View.INVISIBLE);
+//	          break;
+//	          
+//	        case R.id.imgBtn8:
+//	        	coracao = 8;
+//        		System.out.println("CORACAO8");
+//        		viewIMG1 .setVisibility(View.INVISIBLE);
+//        		viewIMG2 .setVisibility(View.INVISIBLE);
+//        		viewIMG3 .setVisibility(View.INVISIBLE);
+//        		viewIMG4 .setVisibility(View.INVISIBLE);
+//        		viewIMG5 .setVisibility(View.INVISIBLE);
+//        		viewIMG6 .setVisibility(View.INVISIBLE);
+//        		viewIMG7 .setVisibility(View.INVISIBLE);
+//        		viewIMG8 .setVisibility(View.VISIBLE);
+//	          break;
+//	      }
         }
     }
     
-//    public void onBackPressed(){
-//        MainActivity.this.finish();
-//        android.os.Process.killProcess(android.os.Process.myPid());
-//        System.exit(0);
-//        getParent().finish();
-//    }
+    public void onBackPressed(){
+        TexturaActivity.this.finish();
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(0);
+        getParent().finish();
+    }
     
-    private class CountDownTask extends AsyncTask<Void, Void, Void>
-    {
-        @Override
-        protected Void doInBackground(Void... urls)
-        {
-        	
+    
+//    private class CountDownTask extends AsyncTask<Void, Void, Void>
+//    {
+//        @Override
+//        protected Void doInBackground(Void... urls)
+//        {
+//        	
 //            for (int i = 0; i >= 0; --i)
 //            {
 //            	publishProgress(i);
@@ -289,8 +322,8 @@ public class TexturaActivity extends Activity
 //            }
 //            main.putExtra("coracao", coracao);
 //            startActivity(main);
-        	System.out.println("TERMINOU");
-            return null;
-        }
-    }
+//        	System.out.println("TERMINOU");
+//            return null;
+//        }
+//    }
 }
