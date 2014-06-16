@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcdfe1"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context="com.quatropdois.acaodocoracao.MainActivity" >
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imgBtn1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/btn1" />
+            <ImageButton
+                android:id="@+id/imgBtn2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/btn2" />
+            <ImageButton
+                android:id="@+id/imgBtn3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/btn3" />
+            <ImageButton
+                android:id="@+id/imgBtn4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/btn4" />
+            <ImageButton
+                android:id="@+id/imgBtn5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/btn5" />
+            <ImageButton
+                android:id="@+id/imgBtn6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/btn6" />
+            <ImageButton
+                android:id="@+id/imgBtn7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/btn7" />
+            <ImageButton
+                android:id="@+id/imgBtn8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/btn8" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/img1"
+        android:visibility="invisible" />
+        
+        <ImageView
+        android:id="@+id/img2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" 
+        android:src="@drawable/img2" />
+        
+        <ImageView
+        android:id="@+id/img3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" 
+        android:src="@drawable/img3" />
+        
+        <ImageView
+        android:id="@+id/img4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" 
+        android:src="@drawable/img4" />
+        
+        <ImageView
+        android:id="@+id/img5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" 
+        android:src="@drawable/img5" />
+        
+        <ImageView
+        android:id="@+id/img6"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" 
+        android:src="@drawable/img6" />
+        
+        <ImageView
+        android:id="@+id/img7"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" 
+        android:src="@drawable/img7" />
+        
+        <ImageView
+        android:id="@+id/img8"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" 
+        android:src="@drawable/img8" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/top_logo" />
+
+        <Button
+            android:id="@+id/select"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/HorizontalScrollView1"
+            android:layout_centerHorizontal="true"
+            android:onClick="onNextButton"
+            android:text="Selecionar" />
+
+</RelativeLayout>

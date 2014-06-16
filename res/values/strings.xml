@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ação do Coração</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Shake</string>
+    <string name="title_activity_mainactivity">Faça sua escolha:</string>
+    <string name="title_activity_test">Test</string>
+    <string name="start">Start</string>
+    <string name="taskTitle_train">Contador Punhetometro</string>
+    <string name="taskDesc_desc">Sua missao é chacoalhar 10 vezes.</string>
+    <string name="Principal_apresentacao">Gozando na cara da sociedade</string>
+    <string name="Contagem_shakes">Contagem de Shakes</string>
+    <string name="title_activity_camera__preview">Camera_Preview</string>
+    <string name="title_activity_foto__gozada">Foto_Gozada</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="imagem_tela_main">ferramenta escolhida</string>
+    
+    <color name="black">#000000</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="red">#e2005a</color>
+    <color name="CornflowerBlue">#6495ED</color>
+
+</resources>
