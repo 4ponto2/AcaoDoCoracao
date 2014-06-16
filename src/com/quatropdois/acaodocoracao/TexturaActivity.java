@@ -1,13 +1,17 @@
 package com.quatropdois.acaodocoracao;
 
 
+import org.w3c.dom.Text;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.InputFilter.LengthFilter;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class TexturaActivity extends Activity
 {
@@ -34,8 +38,11 @@ public class TexturaActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.textura_activity);
         init();
+        coracaoescolhido();
     }
-    
+    public void coracaoescolhido(){
+    	Toast.makeText(getApplicationContext(), "coracao escolhido:" + coracao, Toast.LENGTH_LONG).show();
+    }
     public void init()
     {
 //    	main = new Intent(getApplicationContext(), Main.class);
