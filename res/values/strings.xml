@@ -16,10 +16,12 @@
     <string name="title_activity_foto__gozada">Foto_Gozada</string>
     <string name="title_activity_principal">Principal</string>
     <string name="imagem_tela_main">ferramenta escolhida</string>
-    
+
     <color name="black">#000000</color>
     <color name="branco">#FFFFFF</color>
     <color name="red">#e2005a</color>
     <color name="CornflowerBlue">#6495ED</color>
+
+    <string name="title_activity_sentimento_activity">Sentimento_activity</string>
 
 </resources>

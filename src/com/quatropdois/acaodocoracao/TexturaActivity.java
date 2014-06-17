@@ -3,6 +3,7 @@ package com.quatropdois.acaodocoracao;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,6 +23,8 @@ public class TexturaActivity extends Activity
 	public ImageView	viewCor;
 	
 	Texturas texturas;
+
+	private Intent nextScreen;
     
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -30,6 +33,7 @@ public class TexturaActivity extends Activity
         setContentView(R.layout.textura_activity);
         init();
         texturas = new Texturas(this);
+    	nextScreen = new Intent(getApplicationContext(), Sentimento_activity.class);
     }
     public void init()
     {
@@ -160,5 +164,14 @@ public class TexturaActivity extends Activity
         android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(0);
         getParent().finish();
+    }
+    
+    public void onNextButton(View view){
+    	if(!wasExecuted){
+        	Log.v(null, "countdown started");
+    	    wasExecuted = true;
+        	startActivity(nextScreen);
+        }
+//    	MainActivity.this.startActivity(nextScreen);
     }
 }
