@@ -23,7 +23,7 @@ public class Sentimento_activity extends Activity {
 	
 	private int frase = 0;
 	
-	public ImageView	viewCor;
+	public ImageView viewCor;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
