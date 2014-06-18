@@ -352,19 +352,19 @@ public final class R {
         public static final int imgBtn6=0x7f0a0007;
         public static final int imgBtn7=0x7f0a0008;
         public static final int imgBtn8=0x7f0a0009;
-        public static final int img_cor=0x7f0a0056;
+        public static final int img_cor=0x7f0a0060;
         public static final int logo_pirocam=0x7f0a0015;
         public static final int select=0x7f0a0013;
-        public static final int textBtn1=0x7f0a0057;
-        public static final int textBtn10=0x7f0a0060;
-        public static final int textBtn2=0x7f0a0058;
-        public static final int textBtn3=0x7f0a0059;
-        public static final int textBtn4=0x7f0a005a;
-        public static final int textBtn5=0x7f0a005b;
-        public static final int textBtn6=0x7f0a005c;
-        public static final int textBtn7=0x7f0a005d;
-        public static final int textBtn8=0x7f0a005e;
-        public static final int textBtn9=0x7f0a005f;
+        public static final int textBtn1=0x7f0a0056;
+        public static final int textBtn10=0x7f0a005f;
+        public static final int textBtn2=0x7f0a0057;
+        public static final int textBtn3=0x7f0a0058;
+        public static final int textBtn4=0x7f0a0059;
+        public static final int textBtn5=0x7f0a005a;
+        public static final int textBtn6=0x7f0a005b;
+        public static final int textBtn7=0x7f0a005c;
+        public static final int textBtn8=0x7f0a005d;
+        public static final int textBtn9=0x7f0a005e;
     }
     public static final class layout {
         public static final int mainactivity=0x7f030000;
