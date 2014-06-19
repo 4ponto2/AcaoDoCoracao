@@ -23,5 +23,6 @@
     <color name="CornflowerBlue">#6495ED</color>
 
     <string name="title_activity_sentimento_activity">Sentimento_activity</string>
+    <string name="title_activity_final_heart_">FinalHeart_Activity</string>
 
 </resources>

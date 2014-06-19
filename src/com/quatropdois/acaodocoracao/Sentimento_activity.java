@@ -21,7 +21,11 @@ public class Sentimento_activity extends Activity {
 	
 	private Intent nextScreen;
 	
-	private int frase = 0;
+	private int coracao = 0;
+	
+	private int textura = 0;
+	
+	private int sentimento;
 	
 	public ImageView viewCor;
 
@@ -30,7 +34,9 @@ public class Sentimento_activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.sentimento_activity);
 
-    	nextScreen = new Intent(getApplicationContext(), Sentimento_activity.class);
+    	nextScreen = new Intent(getApplicationContext(), FinalHeart_Activity.class);
+    	
+    	init();
 
 	}
 	
@@ -40,6 +46,13 @@ public class Sentimento_activity extends Activity {
         wasExecuted = false;
 
         viewCor  = (ImageView)findViewById(R.id.img_cor);
+        
+        sentimento = 0;
+        
+        Intent iin = getIntent();
+        Bundle extras = iin.getExtras();
+        coracao = (int) extras.getInt("coracao");
+        textura = (int) extras.getInt("textura");
         
     }
     
@@ -51,286 +64,290 @@ public class Sentimento_activity extends Activity {
         	switch(view.getId()) {
         	
 	        case R.id.BtnSent1:
-	        	frase = 1;
+	        	sentimento = 1;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent2:
-	        	frase = 2;
+	        	sentimento = 2;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent3:
-	        	frase = 3;
+	        	sentimento = 3;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent4:
-	        	frase = 4;
+	        	sentimento = 4;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent5:
-	        	frase = 5;
+	        	sentimento = 5;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent6:
-	        	frase = 6;
+	        	sentimento = 6;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent7:
-	        	frase = 7;
+	        	sentimento = 7;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent8:
-	        	frase = 8;
+	        	sentimento = 8;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent9:
-	        	frase = 9;
+	        	sentimento = 9;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent10:
-	        	frase = 10;
+	        	sentimento = 10;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	        	
 	        case R.id.BtnSent11:
-	        	frase = 11;
+	        	sentimento = 11;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent12:
-	        	frase = 12;
+	        	sentimento = 12;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent13:
-	        	frase = 13;
+	        	sentimento = 13;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent14:
-	        	frase = 14;
+	        	sentimento = 14;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent15:
-	        	frase = 15;
+	        	sentimento = 15;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent16:
-	        	frase = 16;
+	        	sentimento = 16;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent17:
-	        	frase = 17;
+	        	sentimento = 17;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent18:
-	        	frase = 18;
+	        	sentimento = 18;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent19:
-	        	frase = 19;
+	        	sentimento = 19;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent20:
-	        	frase = 20;
+	        	sentimento = 20;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent21:
-	        	frase = 21;
+	        	sentimento = 21;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent22:
-	        	frase = 22;
+	        	sentimento = 22;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent23:
-	        	frase = 23;
+	        	sentimento = 23;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent24:
-	        	frase = 24;
+	        	sentimento = 24;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent25:
-	        	frase = 25;
+	        	sentimento = 25;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent26:
-	        	frase = 26;
+	        	sentimento = 26;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent27:
-	        	frase = 27;
+	        	sentimento = 27;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent28:
-	        	frase = 28;
+	        	sentimento = 28;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent29:
-	        	frase = 29;
+	        	sentimento = 29;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent30:
-	        	frase = 30;
+	        	sentimento = 30;
 //	        	texturas.texturas(coracao, textura);
 	          break;	 
 	          
 	        case R.id.BtnSent41:
-	        	frase = 41;
+	        	sentimento = 41;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent42:
-	        	frase = 42;
+	        	sentimento = 42;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent43:
-	        	frase = 43;
+	        	sentimento = 43;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent44:
-	        	frase = 44;
+	        	sentimento = 44;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent45:
-	        	frase = 45;
+	        	sentimento = 45;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent46:
-	        	frase = 46;
+	        	sentimento = 46;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent47:
-	        	frase = 47;
+	        	sentimento = 47;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent48:
-	        	frase = 48;
+	        	sentimento = 48;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent49:
-	        	frase = 49;
+	        	sentimento = 49;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent50:
-	        	frase = 50;
+	        	sentimento = 50;
 //	        	texturas.texturas(coracao, textura);
 	          break;	 
 	          
 	        case R.id.BtnSent51:
-	        	frase = 51;
+	        	sentimento = 51;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent52:
-	        	frase = 52;
+	        	sentimento = 52;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent53:
-	        	frase = 53;
+	        	sentimento = 53;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent54:
-	        	frase = 54;
+	        	sentimento = 54;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent55:
-	        	frase = 55;
+	        	sentimento = 55;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent56:
-	        	frase = 56;
+	        	sentimento = 56;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent57:
-	        	frase = 57;
+	        	sentimento = 57;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent58:
-	        	frase = 58;
+	        	sentimento = 58;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent59:
-	        	frase = 59;
+	        	sentimento = 59;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent60:
-	        	frase = 60;
+	        	sentimento = 60;
 //	        	texturas.texturas(coracao, textura);
 	          break;	          
 	          
 	        case R.id.BtnSent61:
-	        	frase = 1;
+	        	sentimento = 61;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent62:
-	        	frase = 2;
+	        	sentimento = 62;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent63:
-	        	frase = 3;
+	        	sentimento = 63;
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
 	        case R.id.BtnSent64:
-	        	frase = 4;
+	        	sentimento = 64;
 //	        	texturas.texturas(coracao, textura);
 	          break;
-	          	          
-			default:
-				Toast.makeText(getApplicationContext(), "Textura não encontrada", Toast.LENGTH_LONG).show();
-				break;
+	          	    
 	      }
+        	Log.i("SENTIMENTO", "sentimento: " + sentimento);
         }
     }
 	
     public void onNextButton(View view){
+
+        Log.i("CORACAO: ", "coracao: " + coracao);
+        Log.i("TEXTURA: ", "textura: " + textura);
+        Log.i("SENTIMENTO: ", "sentimento: " + sentimento);
     	if(!wasExecuted){
-        	Log.v(null, "countdown started");
     	    wasExecuted = true;
+        	nextScreen.putExtra("coracao", coracao);
+        	nextScreen.putExtra("textura", textura);
+        	nextScreen.putExtra("sentimento", sentimento);
         	startActivity(nextScreen);
         }
 //    	MainActivity.this.startActivity(nextScreen);

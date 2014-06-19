@@ -13,7 +13,7 @@ public class Texturas {
 		textAct = (TexturaActivity) context;
 		
 	}
-
+	
 	public void texturas(int coracao, int textura){
 //		int coracao = 0;
 		

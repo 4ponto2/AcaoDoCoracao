@@ -193,7 +193,6 @@ public class MainActivity extends Activity
     
     public void onNextButton(View view){
     	if(!wasExecuted){
-        	Log.v(null, "countdown started");
     	    wasExecuted = true;
         	nextScreen.putExtra("coracao", coracao);
         	startActivity(nextScreen);

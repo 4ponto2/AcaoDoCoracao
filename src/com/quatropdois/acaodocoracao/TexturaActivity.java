@@ -18,8 +18,6 @@ public class TexturaActivity extends Activity
     private int coracao = 0;
     private int textura = 0;
     
-    sharedPreference qtdUso;
-    
 	public ImageView	viewCor;
 	
 	Texturas texturas;
@@ -40,8 +38,6 @@ public class TexturaActivity extends Activity
     	
         wasExecuted = false;
         
-        qtdUso = new sharedPreference(getApplicationContext());
-
         viewCor  = (ImageView)findViewById(R.id.img_cor);
         
         Intent iin = getIntent();
@@ -168,8 +164,9 @@ public class TexturaActivity extends Activity
     
     public void onNextButton(View view){
     	if(!wasExecuted){
-        	Log.v(null, "countdown started");
     	    wasExecuted = true;
+        	nextScreen.putExtra("coracao", coracao);
+        	nextScreen.putExtra("textura", textura);
         	startActivity(nextScreen);
         }
 //    	MainActivity.this.startActivity(nextScreen);
