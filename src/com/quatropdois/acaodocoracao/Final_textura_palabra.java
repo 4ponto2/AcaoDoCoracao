@@ -527,14 +527,10 @@ public class Final_textura_palabra {
           	break; 
             
         case 11:
-        	viewSent.setImageResource(R.drawable.sentimento_caridade);
+        	viewSent.setImageResource(R.drawable.sentimento_carinho);
           	break; 
             
         case 12:
-        	viewSent.setImageResource(R.drawable.sentimento_carinho);
-         	break; 
-            
-        case 13:
         	viewSent.setImageResource(R.drawable.sentimento_compaixao);
          	break; 
             
@@ -719,28 +715,36 @@ public class Final_textura_palabra {
          	break; 
             
         case 59:
-        	viewSent.setImageResource(R.drawable.sentimento_sucesso);
+        	viewSent.setImageResource(R.drawable.sentimento_sossego);
          	break; 
             
         case 60:
+        	viewSent.setImageResource(R.drawable.sentimento_sucesso);
+         	break; 
+            
+        case 61:
         	viewSent.setImageResource(R.drawable.sentimento_superacao);
          	break;
               
-        case 61:
+        case 62:
         	viewSent.setImageResource(R.drawable.sentimento_ternura);
         	break;
           
-        case 62:
+        case 63:
         	viewSent.setImageResource(R.drawable.sentimento_tranquilidade);
         	break;
           
-        case 63:
+        case 64:
         	viewSent.setImageResource(R.drawable.sentimento_transformacao);
         	break;
           
-        case 64:
+        case 65:
         	viewSent.setImageResource(R.drawable.sentimento_verdade);
         	break;
+            
+        case 66:
+          	viewSent.setImageResource(R.drawable.sentimento_vitoria);
+          	break;
                    	
       }
 	}

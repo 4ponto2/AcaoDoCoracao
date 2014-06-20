@@ -9,8 +9,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 import android.os.Build;
@@ -28,6 +32,8 @@ public class Sentimento_activity extends Activity {
 	private int sentimento;
 	
 	public ImageView viewCor;
+	
+	public ImageButton btn_sent;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -60,11 +66,14 @@ public class Sentimento_activity extends Activity {
     {
         if(!wasExecuted){
 
-
+        	view.setSelected(true);
+        	
+        	
         	switch(view.getId()) {
         	
 	        case R.id.BtnSent1:
 	        	sentimento = 1;
+//	        	btn_sent = (ImageButton)findViewById(R.id.BtnSent1);
 //	        	texturas.texturas(coracao, textura);
 	          break;
 	          
@@ -335,8 +344,11 @@ public class Sentimento_activity extends Activity {
 	          	    
 	      }
         	Log.i("SENTIMENTO", "sentimento: " + sentimento);
+
         }
+
     }
+    
 	
     public void onNextButton(View view){
 
@@ -359,4 +371,5 @@ public class Sentimento_activity extends Activity {
         System.exit(0);
         getParent().finish();
     }
+    
 }
