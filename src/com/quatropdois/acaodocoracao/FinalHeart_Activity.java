@@ -1,18 +1,13 @@
 package com.quatropdois.acaodocoracao;
 
 import android.app.Activity;
-import android.app.ActionBar;
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.os.Build;
+import android.widget.ShareActionProvider;
 
 public class FinalHeart_Activity extends Activity {
 	
@@ -42,6 +37,24 @@ private boolean wasExecuted;
 		init();
 		
 		montaCoracao();
+	}
+	
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.final_heart_, menu);
+		
+		MenuItem shareItem = (MenuItem) menu.findItem(R.id.action_share);
+		
+		ShareActionProvider mShare = (ShareActionProvider)shareItem.getActionProvider();
+		
+		Intent shareIntent = new Intent(Intent.ACTION_SEND);
+		shareIntent.setAction(Intent.ACTION_SEND);
+		shareIntent.setType("text/plain");
+		shareIntent.putExtra(Intent.EXTRA_TEXT, "text to share");
+		
+		mShare.setShareIntent(shareIntent);
+		
+		return true;
 	}
 	
     public void init()

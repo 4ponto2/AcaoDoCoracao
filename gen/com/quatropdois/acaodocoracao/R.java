@@ -334,6 +334,7 @@ public final class R {
         public static final int HorizontalScrollView1=0x7f0a0005;
         public static final int RelativeLayout1=0x7f0a0004;
         public static final int action_settings=0x7f0a0062;
+        public static final int action_share=0x7f0a0063;
         public static final int btnCoracaoH=0x7f0a0016;
         public static final int imageView1=0x7f0a0001;
         public static final int img1=0x7f0a000e;
