@@ -80,6 +80,78 @@
                 android:layout_height="100dp"
                 android:onClick="selectCoracao"
                 android:src="@drawable/text10" />
+            <ImageButton
+                android:id="@+id/textBtn11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/text11" />
+            <ImageButton
+                android:id="@+id/textBtn12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/text12" />
+            <ImageButton
+                android:id="@+id/textBtn13"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/text13" />
+            <ImageButton
+                android:id="@+id/textBtn14"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/text14" />
+            <ImageButton
+                android:id="@+id/textBtn15"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/text15" />
+            <ImageButton
+                android:id="@+id/textBtn16"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/text16" />
+            <ImageButton
+                android:id="@+id/textBtn17"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/text17" />
+            <ImageButton
+                android:id="@+id/textBtn18"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/text18" />
+            <ImageButton
+                android:id="@+id/textBtn19"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/text19" />
+            <ImageButton
+                android:id="@+id/textBtn20"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/text20" />
+            <ImageButton
+                android:id="@+id/textBtn21"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/text21" />
+            <ImageButton
+                android:id="@+id/textBtn22"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="selectCoracao"
+                android:src="@drawable/text22" />
             
             <!-- GRUPO 2 -->
                   

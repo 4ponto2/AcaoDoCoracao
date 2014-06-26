@@ -147,6 +147,66 @@ public class TexturaActivity extends Activity
 	        	textura = 10;
 	        	texturas.texturas(coracao, textura);
 	          break;
+	          
+	        case R.id.textBtn11:
+	        	textura = 11;
+	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn12:
+	        	textura = 12;
+	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn13:
+	        	textura = 13;
+	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn14:
+	        	textura = 14;
+	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn15:
+	        	textura = 15;
+	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn16:
+	        	textura = 16;
+	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn17:
+	        	textura = 17;
+	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn18:
+	        	textura = 18;
+	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn19:
+	        	textura = 19;
+	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn20:
+	        	textura = 20;
+	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn21:
+	        	textura = 21;
+	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn22:
+	        	textura = 22;
+	        	texturas.texturas(coracao, textura);
+	          break;
 	        	
 			default:
 				Toast.makeText(getApplicationContext(), "Textura não encontrada", Toast.LENGTH_LONG).show();

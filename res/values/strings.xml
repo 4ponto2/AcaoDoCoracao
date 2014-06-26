@@ -21,6 +21,7 @@
     <color name="branco">#FFFFFF</color>
     <color name="red">#e2005a</color>
     <color name="CornflowerBlue">#6495ED</color>
+    <color name="FundoAcaoCoracao">#fcdfe1</color>
 
     <string name="title_activity_sentimento_activity">Sentimento_activity</string>
     <string name="title_activity_final_heart_">Compartilhe</string>

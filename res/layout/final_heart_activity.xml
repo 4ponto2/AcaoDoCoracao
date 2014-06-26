@@ -32,7 +32,7 @@
             android:layout_height="60dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:onClick="onNextButton"
+            android:onClick="shareImage"
             android:text="Selecionar" />
 
         <ImageView

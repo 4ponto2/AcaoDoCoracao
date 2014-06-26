@@ -9,7 +9,11 @@ import java.io.OutputStream;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
@@ -22,7 +26,7 @@ import android.widget.Toast;
 
 public class FinalHeart_Activity extends Activity {
 	
-private boolean wasExecuted;
+	private boolean wasExecuted;
 	
 	private Intent nextScreen;
 	
@@ -38,6 +42,10 @@ private boolean wasExecuted;
 	private Bitmap myHeart;
 	
 	private Final_textura_palabra texturas_final;
+	
+	MontareSalvarImage montagem;
+	
+	Uri uri;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +54,8 @@ private boolean wasExecuted;
 
         texturas_final = new Final_textura_palabra(this);
 		nextScreen = new Intent(getApplicationContext(), FinalHeart_Activity.class);
+		
+		montagem = new MontareSalvarImage(this);
 
 		init();
 		
@@ -57,13 +67,14 @@ private boolean wasExecuted;
 		getMenuInflater().inflate(R.menu.final_heart_, menu);
 		
 		MenuItem shareItem = (MenuItem) menu.findItem(R.id.action_share);
-		
+		Log.i("TOP MENU", "TOP 1");
 		ShareActionProvider mShare = (ShareActionProvider)shareItem.getActionProvider();
+		Log.i("TOP MENU", "TOP 2");
 		
+		shareImage();
 		Intent shareIntent = new Intent(Intent.ACTION_SEND);
-		shareIntent.setAction(Intent.ACTION_SEND);
-		shareIntent.setType("text/plain");
-		shareIntent.putExtra(Intent.EXTRA_TEXT, "text to share");
+		shareIntent.setType("image/*");
+		shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
 		
 		mShare.setShareIntent(shareIntent);
 		
@@ -93,50 +104,55 @@ private boolean wasExecuted;
     	texturas_final.Sentimento(sentimento);
     	viewSent.setVisibility(View.VISIBLE);
     	
-    	BitmapDrawable drawable = (BitmapDrawable) viewCor.getDrawable();
-    	myHeart = drawable.getBitmap();
-
+    	myHeart = montagem.montaCoracao(viewCor, viewSent);
     }
-
+    
     public void onBackPressed(){
         FinalHeart_Activity.this.finish();
         android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(0);
         getParent().finish();
     }
-
-    
+   
     public void onResume(){
-    	SalvaBit(myHeart);    	
+//    	File file = montagem.SalvaBit(myHeart);
+//    	Log.i("FILE", "FILE : " + file);
+//    	String string = file.getName();
+//    	Log.i("FILE", "FILE : " + string);
     	super.onResume();
     }
     
     
-    protected void SalvaBit(final Bitmap result) 
-    { 
-    	String PATH = Environment.getExternalStorageDirectory().toString();
-    	if(result!=null){
-    		// TODO Auto-generated method stub
-			OutputStream outStream = null;
-			File file = new File(PATH, "sampleimage4.jpg");
-			Log.i("LOCAL", "LOCAL: " + file);
-			try{
-				outStream = new FileOutputStream(file);
-				result.compress(Bitmap.CompressFormat.JPEG, 100, outStream);
-				outStream.flush();
-				outStream.close();
-				Toast.makeText(FinalHeart_Activity.this, "Saved", Toast.LENGTH_LONG).show();
-				
-			}catch (FileNotFoundException e){
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				
-			}catch (IOException e){
-//				TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-       
-    }   
-    
+//    public void shareImage(View view) {
+    public void shareImage() {
+    	    	
+//        Intent share = new Intent(Intent.ACTION_SEND);        
+        
+//        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(
+//                Environment.DIRECTORY_PICTURES), "acao do coracao");
+
+//        File mediaFile = new File(mediaStorageDir.getPath() + File.separator +"Screenshot_2014-06-16-18-24-25" + ".jpg");
+        // If you want to share a png image only, you can do:
+        // setType("image/png"); OR for jpeg: setType("image/jpeg");
+//        share.setType("image/*");
+ 
+        
+        
+        // Make sure you put example png image named myImage.png in your
+        // directory
+//        String imagePath2 = Environment.getExternalStorageDirectory()
+//                + "/myImage.png";
+ 
+//        File imageFileToShare = new File(imagePath);
+//        File imageFileToShare = new File(mediaStorageDir.getPath() + File.separator +"Screenshot_2014-06-16-18-24-25" + ".jpg");
+    	File imageFileToShare = montagem.SalvaBit(myHeart);
+//        Log.i("EXTERNAL", "EXTERNAL: " + imageFileToShare);
+        
+//        String imagePath = mediaStorageDir.getAbsolutePath() + File.separator + imageFileToShare.getName() ;
+        
+        uri = Uri.fromFile(imageFileToShare);
+//        share.putExtra(Intent.EXTRA_STREAM, uri);
+// 
+//        startActivity(Intent.createChooser(share, "Share Image!"));
+    }
 }
