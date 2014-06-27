@@ -9,16 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.quatropdois.acaodocoracao.Principal$PlaceholderFragment" >
 
-    <Button
-        android:id="@+id/btnCoracaoH"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="42dp"
-        android:onClick="escolher_piroca"
-        android:text="Iniciar" />
-
     <ImageView
         android:id="@+id/logo_pirocam"
         android:layout_width="350dp"
@@ -26,5 +16,25 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnCoracaoH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="124dp"
+        android:onClick="escolher_piroca"
+        android:text="Criar Coração" />
+
+    <Button
+        android:id="@+id/geoAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnCoracaoH"
+        android:layout_centerHorizontal="true"
+        android:onClick="geoActivity"
+        android:layout_marginTop="62dp"
+        android:text="Postos de Doação" />
 
 </RelativeLayout>

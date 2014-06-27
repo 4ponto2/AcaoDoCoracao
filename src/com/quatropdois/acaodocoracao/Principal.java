@@ -9,7 +9,7 @@ import android.view.View;
 public class Principal extends Activity {
 
 	private boolean wasExecuted = false;
-    private Intent mainActivity;
+    private Intent mainActivity, geoActivity;
     
 
     sharedPreference qtdUso;
@@ -24,13 +24,14 @@ public class Principal extends Activity {
     public void init()
     {
     	mainActivity = new Intent(getApplicationContext(), MainActivity.class);
+    	geoActivity  = new Intent(getApplicationContext(), GeoActivity.class);
 //    	mainActivity = new Intent(getApplicationContext(), TexturaActivity.class);
         wasExecuted = false;
     }
     
     public void reinicio_contador(View view){
-    	qtdUso = new sharedPreference(getApplicationContext());
     	
+    	qtdUso = new sharedPreference(getApplicationContext());
     	qtdUso.remove("qtduso");
     	
     }  
@@ -42,6 +43,12 @@ public class Principal extends Activity {
     	    wasExecuted = true;
             startActivity(mainActivity);
         }
+    }
+    
+    public void geoActivity(View view){
+    	
+    	startActivity(geoActivity);
+    	
     }
 
     public void onBackPressed(){
