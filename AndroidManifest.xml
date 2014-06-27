@@ -73,11 +73,6 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
         </activity>
-
-        <!-- <activity -->
-        <!-- android:name="com.quatropdois.punhetometro.Principal" -->
-        <!-- android:label="@string/title_activity_principal" > -->
-        <!-- </activity> -->
         
         <activity
             android:name="com.quatropdois.acaodocoracao.Sentimento_activity"
@@ -86,12 +81,15 @@
         
         <activity
             android:name="com.quatropdois.acaodocoracao.FinalHeart_Activity"
-            android:label="@string/title_activity_final_heart_" >
+            android:label="@string/title_activity_final_heart_" 
+            android:screenOrientation="portrait">
         </activity>
         
         <activity
             android:name="com.quatropdois.acaodocoracao.GeoActivity"
-            android:label="@string/title_activity_geo" >
+            android:label="@string/title_activity_geo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
         </activity>
         
     </application>

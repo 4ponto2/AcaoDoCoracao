@@ -4,40 +4,21 @@
     android:layout_height="match_parent"
     tools:context=".GeoActivity" >
 
-	<Button
-	    android:id="@+id/btnBurnaby"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentBottom="true"
-	    android:layout_alignParentLeft="true"
-	    android:onClick="onClick_Burnaby"
-	    android:text="Burnaby" />
+    <ImageView
+        android:id="@+id/top_geo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:adjustViewBounds="true"
+        android:src="@drawable/geo_top" />
 
-	<Button
-	    android:id="@+id/btnCity"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentBottom="true"
-	    android:layout_centerHorizontal="true"
-	    android:onClick="onClick_City"
-	    android:text="City" />
-
-	<Button
-	    android:id="@+id/btnSurrey"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentBottom="true"
-	    android:layout_alignParentRight="true"
-	    android:onClick="onClick_Surrey"
-	    android:text="Surrey" />
-
-	<fragment
-	    android:id="@+id/map"
-	    android:name="com.google.android.gms.maps.MapFragment"
-	    android:layout_width="match_parent"
-	    android:layout_height="match_parent"
-	    android:layout_above="@+id/btnBurnaby"
-	    android:layout_alignParentLeft="true"
-	    android:layout_alignParentTop="true" />
-
+ 	<fragment
+ 	    android:id="@+id/map"
+ 	    android:name="com.google.android.gms.maps.MapFragment"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignParentBottom="true"
+ 	    android:layout_below="@+id/top_geo"
+ 	    android:layout_centerHorizontal="true" />
+	    
 </RelativeLayout>
