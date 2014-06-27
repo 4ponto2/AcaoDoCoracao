@@ -754,11 +754,11 @@ containing a value of this type.
         public static final int text16=0x7f02016b;
         public static final int text17=0x7f02016c;
         public static final int text18=0x7f02016d;
-        public static final int text19=0x7f02016e;
+        public static final int text19_=0x7f02016e;
         public static final int text2=0x7f02016f;
-        public static final int text20=0x7f020170;
-        public static final int text21=0x7f020171;
-        public static final int text22=0x7f020172;
+        public static final int text20_=0x7f020170;
+        public static final int text21_=0x7f020171;
+        public static final int text22_=0x7f020172;
         public static final int text3=0x7f020173;
         public static final int text4=0x7f020174;
         public static final int text5=0x7f020175;
