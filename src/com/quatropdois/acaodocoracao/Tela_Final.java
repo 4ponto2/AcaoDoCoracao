@@ -67,8 +67,6 @@ public class Tela_Final extends Activity {
 		MenuItem shareItem = (MenuItem) menu.findItem(R.id.action_share);
 		ShareActionProvider mShare = (ShareActionProvider)shareItem.getActionProvider();
 		
-		getMenuInflater().inflate(R.menu.final_heart_, menu);
-		
 		shareImage();
 		Intent shareIntent = new Intent(Intent.ACTION_SEND);
 		shareIntent.setType("image/*");
