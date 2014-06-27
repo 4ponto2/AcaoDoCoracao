@@ -9,6 +9,7 @@ import android.os.Bundle;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -97,71 +98,71 @@ public class GeoActivity extends Activity {
 		
 		googleMap  = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 		
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_MUSEU).title("Museu do Café").snippet("Rua XV de Novembro, 95 – Centro – Santos"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_MUSEU).title("Museu do Café").snippet("Rua XV de Novembro, 95 – Centro – Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_SANTO).title("Santuário Santo Antônio do Valongo").snippet("Largo Marquês de Monte Alegre, s/n – Centro - Santos"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_SANTO).title("Santuário Santo Antônio do Valongo").snippet("Largo Marquês de Monte Alegre, s/n – Centro - Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_EDUCACAO).title("Secretaria de Educação").snippet("Rua Frei Gaspar, 25 – em frente a Bolsa do Café"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_EDUCACAO).title("Secretaria de Educação").snippet("Rua Frei Gaspar, 25 – em frente a Bolsa do Café").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_CAMPS).title("CAMPS").snippet("Av. Washington Luis,2 – Vila Matias"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_CAMPS).title("CAMPS").snippet("Av. Washington Luis,2 – Vila Matias").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_TRIBUNA).title("Jornal A Tribuna").snippet("Rua João Pessoa, 129 – Centro – Santos"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_TRIBUNA).title("Jornal A Tribuna").snippet("Rua João Pessoa, 129 – Centro – Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_PREFEIT).title("Prefeitura Municipal de Santos").snippet("Praça Mauá, s/n – Centro - Santos"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_PREFEIT).title("Prefeitura Municipal de Santos").snippet("Praça Mauá, s/n – Centro - Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_COPMAU).title("Copiadora Mauá").snippet("Praça Mauá,28 Centro Santos"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_COPMAU).title("Copiadora Mauá").snippet("Praça Mauá,28 Centro Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_GRAOPIM).title("Grão Pimenta ").snippet("Rua Riachuelo, 43 – Centro"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_GRAOPIM).title("Grão Pimenta ").snippet("Rua Riachuelo, 43 – Centro").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_COLBARNABE).title("Colégio Barnabé").snippet("Av. São Francisco, Centro – perto da Sabesp"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_COLBARNABE).title("Colégio Barnabé").snippet("Av. São Francisco, Centro – perto da Sabesp").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_BALNEARIO).title("Shopping Parque Balneário").snippet("Av. Ana Costa, 549 – Gonzaga"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_BALNEARIO).title("Shopping Parque Balneário").snippet("Av. Ana Costa, 549 – Gonzaga").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_AOPH).title("Ao Pharmacêutico").snippet("Rua Galeão Carvalhal, 38 – Gonzaga – Santos"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_AOPH).title("Ao Pharmacêutico").snippet("Rua Galeão Carvalhal, 38 – Gonzaga – Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_FOFOLET).title("Clínica Fofolete").snippet("Av. Bernardino de Campos, 75 "));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_FOFOLET).title("Clínica Fofolete").snippet("Av. Bernardino de Campos, 75 ").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_RENTAL).title("Rental Festa").snippet("Av. Washington Luiz, 102"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_RENTAL).title("Rental Festa").snippet("Av. Washington Luiz, 102").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_ESTCID).title("Estação da Cidadania").snippet("Av. Ana Costa, em frente ao supermercado Extra "));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_ESTCID).title("Estação da Cidadania").snippet("Av. Ana Costa, em frente ao supermercado Extra ").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_JORORL).title("Jornal da Orla").snippet("Rua Timbiras, 16 – Gonzaga"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_JORORL).title("Jornal da Orla").snippet("Rua Timbiras, 16 – Gonzaga").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_MEDCENT).title("Medcenter").snippet("R. Dr. Olinto Rodrigues Dantas, 343 - Encruzilhada, Santos/SP"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_MEDCENT).title("Medcenter").snippet("R. Dr. Olinto Rodrigues Dantas, 343 - Encruzilhada, Santos/SP").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_ROSELI).title("Roseli Hanna").snippet("Av. Senador Pinheiro Machado, 930/apt.13"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_ROSELI).title("Roseli Hanna").snippet("Av. Senador Pinheiro Machado, 930/apt.13").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_PORTAL).title("Posto Portal").snippet("Av. Dr. Cláudio Luiz da Costa, 291 – Jabaquara-  Santos"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_PORTAL).title("Posto Portal").snippet("Av. Dr. Cláudio Luiz da Costa, 291 – Jabaquara-  Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_HOSPSNT).title("Hospital Santa Casa de Misericórdia de Santos"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_HOSPSNT).title("Hospital Santa Casa de Misericórdia de Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_HOSBENE).title("Hospital Beneficência Portuguesa"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_HOSBENE).title("Hospital Beneficência Portuguesa").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_ILHABEL).title("Edifício Ilha Bela").snippet("Av. Bernardino de Campso, 626 – Pompeia"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_ILHABEL).title("Edifício Ilha Bela").snippet("Av. Bernardino de Campso, 626 – Pompeia").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_FLORIKE).title("Floricultura Ikebana").snippet("Rua Euclides da Cunha"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_FLORIKE).title("Floricultura Ikebana").snippet("Rua Euclides da Cunha").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_TVTRIBU).title("TV Tribuna").snippet("Av. Antonio Emmerick, 1373 – Jardim Três Estrelas – S. Vicente"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_TVTRIBU).title("TV Tribuna").snippet("Av. Antonio Emmerick, 1373 – Jardim Três Estrelas – S. Vicente").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_PINACOT).title("Pinacoteca Benedito Calixto").snippet("Av. Bartolomeu de Gusmão, 15 Boqueirão"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_PINACOT).title("Pinacoteca Benedito Calixto").snippet("Av. Bartolomeu de Gusmão, 15 Boqueirão").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_SESCSAN).title("SESC Santos").snippet("R. Conselheiro Ribas, 136 - Aparecida"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_SESCSAN).title("SESC Santos").snippet("R. Conselheiro Ribas, 136 - Aparecida").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_ROCA).title("Roca").snippet("Rua Alexandre Martins 47/49 – Aparecida"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_ROCA).title("Roca").snippet("Rua Alexandre Martins 47/49 – Aparecida").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_BOQNEWS).title("BoqNews").snippet("Av. Pedro Lessa, 3076, cj 81 – Embaré"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_BOQNEWS).title("BoqNews").snippet("Av. Pedro Lessa, 3076, cj 81 – Embaré").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_CLARISHAIR).title("Claris Hair").snippet("Rua São José, 38 - Embaré"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_CLARISHAIR).title("Claris Hair").snippet("Rua São José, 38 - Embaré").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_HOSPGUIL).title("Hospital Guilherme Álvaro").snippet("Rua Dr. Oswaldo Cruz, 197 – Boqueirão"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_HOSPGUIL).title("Hospital Guilherme Álvaro").snippet("Rua Dr. Oswaldo Cruz, 197 – Boqueirão").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_ADESAF).title("ADESAF").snippet("R. Guarany, 70, São Vicente - SP, 11360-000"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_ADESAF).title("ADESAF").snippet("R. Guarany, 70, São Vicente - SP, 11360-000").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_APAE).title("APAE").snippet("Rua Feliciana Marcondes da Silva, 205 – Catiapoã"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_APAE).title("APAE").snippet("Rua Feliciana Marcondes da Silva, 205 – Catiapoã").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_COLALFA).title("Colégio Alfa").snippet("Rua Washington, 293/305 – Vila Maia – Guarujá"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_COLALFA).title("Colégio Alfa").snippet("Rua Washington, 293/305 – Vila Maia – Guarujá").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_SESICUB).title("SESI").snippet("Av. Comendador Francisco Bernardo, 261 – Parque São Luiz – Cubatão"));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_SESICUB).title("SESI").snippet("Av. Comendador Francisco Bernardo, 261 – Parque São Luiz – Cubatão").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 		
 //		CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_SANTOS, 14);
 		
