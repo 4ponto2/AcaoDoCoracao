@@ -8,17 +8,14 @@ import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
-import android.net.Uri;
 import android.os.Environment;
 import android.util.Log;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class MontareSalvarImage {
 	
@@ -76,7 +73,6 @@ public class MontareSalvarImage {
 				result.compress(Bitmap.CompressFormat.JPEG, 100, outStream);
 				outStream.flush();
 				outStream.close();
-				Toast.makeText(FinalHeart, "Saved", Toast.LENGTH_LONG).show();
 				
 			}catch (FileNotFoundException e){
 				// TODO Auto-generated catch block
