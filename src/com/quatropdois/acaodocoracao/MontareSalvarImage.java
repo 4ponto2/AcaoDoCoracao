@@ -22,11 +22,13 @@ import android.widget.Toast;
 
 public class MontareSalvarImage {
 	
-	FinalHeart_Activity FinalHeart;
+	Tela_Final FinalHeart;
+//	FinalHeart_Activity FinalHeart;
 	
 	public MontareSalvarImage(Context context){
 		
-		FinalHeart = (FinalHeart_Activity) context;
+//		FinalHeart = (FinalHeart_Activity) context;
+		FinalHeart = (Tela_Final) context;
 		
 	}
 	

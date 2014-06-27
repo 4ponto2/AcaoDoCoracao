@@ -849,7 +849,7 @@ containing a value of this type.
         public static final int holo_dark=0x7f070005;
         public static final int holo_light=0x7f070006;
         public static final int hybrid=0x7f070004;
-        public static final int imageView1=0x7f070017;
+        public static final int imageView1=0x7f070016;
         public static final int imgBtn1=0x7f07001c;
         public static final int imgBtn2=0x7f07001d;
         public static final int imgBtn3=0x7f07001e;
@@ -858,8 +858,8 @@ containing a value of this type.
         public static final int imgBtn6=0x7f070021;
         public static final int imgBtn7=0x7f070022;
         public static final int imgBtn8=0x7f070023;
-        public static final int img_cor=0x7f070016;
-        public static final int img_sentimento=0x7f070019;
+        public static final int img_cor=0x7f070017;
+        public static final int img_sentimento=0x7f070018;
         public static final int logo_pirocam=0x7f070024;
         public static final int map=0x7f070015;
         public static final int match_parent=0x7f07000c;
@@ -869,7 +869,7 @@ containing a value of this type.
         public static final int production=0x7f070007;
         public static final int sandbox=0x7f070008;
         public static final int satellite=0x7f070002;
-        public static final int select=0x7f070018;
+        public static final int select=0x7f070019;
         public static final int selectionDetails=0x7f07000b;
         public static final int strict_sandbox=0x7f070009;
         public static final int terrain=0x7f070003;
@@ -903,11 +903,12 @@ containing a value of this type.
     }
     public static final class layout {
         public static final int activity_geo=0x7f030000;
-        public static final int final_heart_activity=0x7f030001;
-        public static final int mainactivity=0x7f030002;
-        public static final int principal=0x7f030003;
-        public static final int sentimento_activity=0x7f030004;
-        public static final int textura_activity=0x7f030005;
+        public static final int activity_tela_final=0x7f030001;
+        public static final int final_heart_activity=0x7f030002;
+        public static final int mainactivity=0x7f030003;
+        public static final int principal=0x7f030004;
+        public static final int sentimento_activity=0x7f030005;
+        public static final int textura_activity=0x7f030006;
     }
     public static final class menu {
         public static final int camera__preview=0x7f0b0000;
@@ -916,6 +917,7 @@ containing a value of this type.
         public static final int main=0x7f0b0003;
         public static final int principal=0x7f0b0004;
         public static final int sentimento_activity=0x7f0b0005;
+        public static final int tela__final=0x7f0b0006;
     }
     public static final class raw {
         public static final int barkloud=0x7f040000;
@@ -1039,6 +1041,7 @@ containing a value of this type.
         public static final int title_activity_mainactivity=0x7f050024;
         public static final int title_activity_principal=0x7f05002d;
         public static final int title_activity_sentimento_activity=0x7f05002f;
+        public static final int title_activity_tela__final=0x7f050032;
         public static final int title_activity_test=0x7f050025;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 

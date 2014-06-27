@@ -71,12 +71,12 @@ public class FinalHeart_Activity extends Activity {
 		ShareActionProvider mShare = (ShareActionProvider)shareItem.getActionProvider();
 		Log.i("TOP MENU", "TOP 2");
 		
-		shareImage();
-		Intent shareIntent = new Intent(Intent.ACTION_SEND);
-		shareIntent.setType("image/*");
-		shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
-		
-		mShare.setShareIntent(shareIntent);
+//		shareImage();
+//		Intent shareIntent = new Intent(Intent.ACTION_SEND);
+//		shareIntent.setType("image/*");
+//		shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
+//		
+//		mShare.setShareIntent(shareIntent);
 		
 		return true;
 	}

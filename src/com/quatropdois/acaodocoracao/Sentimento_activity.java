@@ -29,7 +29,7 @@ public class Sentimento_activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.sentimento_activity);
 
-    	nextScreen = new Intent(getApplicationContext(), FinalHeart_Activity.class);
+    	nextScreen = new Intent(getApplicationContext(), Tela_Final.class);
     	
     	init();
 
