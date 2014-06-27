@@ -989,242 +989,238 @@ public class Final_textura_palabra {
         	break;
           
         case 6:
-        	viewSent.setImageResource(R.drawable.sentimento_amparo);
-        	break;
-          
-        case 7:
         	viewSent.setImageResource(R.drawable.sentimento_apoio);
         	break;
           
-        case 8:
+        case 7:
         	viewSent.setImageResource(R.drawable.sentimento_axe);
         	break;
         	
-        case 9:
+        case 8:
         	viewSent.setImageResource(R.drawable.sentimento_bondade);
           	break; 
             
-        case 10:
+        case 9:
         	viewSent.setImageResource(R.drawable.sentimento_caridade);
           	break; 
             
-        case 11:
+        case 10:
         	viewSent.setImageResource(R.drawable.sentimento_carinho);
           	break; 
             
-        case 12:
+        case 11:
         	viewSent.setImageResource(R.drawable.sentimento_compaixao);
          	break; 
             
-        case 14:
+        case 12:
         	viewSent.setImageResource(R.drawable.sentimento_companheirismo);
          	break; 
             
-        case 15:
+        case 13:
         	viewSent.setImageResource(R.drawable.sentimento_compreensao);
          	break; 
             
-        case 16:
+        case 14:
         	viewSent.setImageResource(R.drawable.sentimento_confianca);
          	break; 
             
-        case 17:
+        case 15:
         	viewSent.setImageResource(R.drawable.sentimento_conforto);
          	break; 
             
-        case 18:
+        case 16:
         	viewSent.setImageResource(R.drawable.sentimento_coragem);
          	break; 
             
-        case 19:
+        case 17:
         	viewSent.setImageResource(R.drawable.sentimento_crescimento);
          	break; 
             
-        case 20:
+        case 18:
         	viewSent.setImageResource(R.drawable.sentimento_cumplicidade);
          	break; 
          	
-        case 21:
+        case 19:
         	viewSent.setImageResource(R.drawable.sentimento_cura);
         	break;
           
-        case 22:
+        case 20:
         	viewSent.setImageResource(R.drawable.sentimento_deus);
         	break;
           
-        case 23:
+        case 21:
         	viewSent.setImageResource(R.drawable.sentimento_energia);
         	break;
           
-        case 24:
+        case 22:
         	viewSent.setImageResource(R.drawable.sentimento_equilibrio);
         	break;
           
-        case 25:
+        case 23:
         	viewSent.setImageResource(R.drawable.sentimento_esperanca);
         	break;
           
-        case 26:
+        case 24:
         	viewSent.setImageResource(R.drawable.sentimento_espiritualidade);
         	break;
           
-        case 27:
+        case 25:
         	viewSent.setImageResource(R.drawable.sentimento_familia);
         	break;
           
-        case 28:
+        case 26:
         	viewSent.setImageResource(R.drawable.sentimento_fartura);
         	break;
         	
-        case 29:
+        case 27:
         	viewSent.setImageResource(R.drawable.sentimento_fe);
           	break; 
             
-        case 30:
+        case 28:
         	viewSent.setImageResource(R.drawable.sentimento_felicidade);
           	break; 
             
-        case 31:
+        case 29:
         	viewSent.setImageResource(R.drawable.sentimento_forca);
           	break; 
             
-        case 32:
+        case 30:
         	viewSent.setImageResource(R.drawable.sentimento_fraternidade);
          	break; 
             
-        case 33:
+        case 31:
         	viewSent.setImageResource(R.drawable.sentimento_generosidade);
          	break; 
             
-        case 34:
+        case 32:
         	viewSent.setImageResource(R.drawable.sentimento_gentileza);
          	break; 
             
-        case 35:
+        case 33:
         	viewSent.setImageResource(R.drawable.sentimento_gratidao);
          	break; 
             
-        case 36:
+        case 34:
         	viewSent.setImageResource(R.drawable.sentimento_harmonia);
          	break; 
             
-        case 37:
+        case 35:
         	viewSent.setImageResource(R.drawable.sentimento_honestidade);
          	break; 
             
-        case 38:
+        case 36:
         	viewSent.setImageResource(R.drawable.sentimento_humildade);
          	break; 
             
-        case 39:
+        case 37:
         	viewSent.setImageResource(R.drawable.sentimento_igualdade);
          	break; 
             
-        case 40:
+        case 38:
         	viewSent.setImageResource(R.drawable.sentimento_liberdade);
          	break;
          	
-        case 41:
+        case 39:
         	viewSent.setImageResource(R.drawable.sentimento_luz);
         	break;
           
-        case 42:
+        case 40:
         	viewSent.setImageResource(R.drawable.sentimento_milagre);
         	break;
           
-        case 43:
+        case 41:
         	viewSent.setImageResource(R.drawable.sentimento_oracao);
         	break;
           
-        case 44:
+        case 42:
         	viewSent.setImageResource(R.drawable.sentimento_otimismo);
         	break;
           
-        case 45:
+        case 43:
         	viewSent.setImageResource(R.drawable.sentimento_paciencia);
         	break;
           
-        case 46:
+        case 44:
         	viewSent.setImageResource(R.drawable.sentimento_paixao);
         	break;
           
-        case 47:
+        case 45:
         	viewSent.setImageResource(R.drawable.sentimento_paz);
         	break;
           
-        case 48:
+        case 46:
         	viewSent.setImageResource(R.drawable.sentimento_perdao);
         	break;
         	
-        case 49:
+        case 47:
         	viewSent.setImageResource(R.drawable.sentimento_perseveranca);
           	break; 
             
-        case 50:
+        case 48:
         	viewSent.setImageResource(R.drawable.sentimento_prosperidade);
           	break; 
             
-        case 51:
+        case 49:
         	viewSent.setImageResource(R.drawable.sentimento_realizacao);
           	break; 
             
-        case 52:
+        case 50:
         	viewSent.setImageResource(R.drawable.sentimento_realizacoes);
          	break; 
             
-        case 53:
+        case 51:
         	viewSent.setImageResource(R.drawable.sentimento_sabedoria);
          	break; 
             
-        case 54:
+        case 52:
         	viewSent.setImageResource(R.drawable.sentimento_saude);
          	break; 
             
-        case 55:
+        case 53:
         	viewSent.setImageResource(R.drawable.sentimento_solidariedade);
          	break; 
             
-        case 56:
+        case 54:
         	viewSent.setImageResource(R.drawable.sentimento_sonhos);
          	break; 
             
-        case 57:
+        case 55:
         	viewSent.setImageResource(R.drawable.sentimento_sorriso);
          	break; 
             
-        case 58:
+        case 56:
         	viewSent.setImageResource(R.drawable.sentimento_sorte);
          	break; 
             
-        case 59:
+        case 57:
         	viewSent.setImageResource(R.drawable.sentimento_sossego);
          	break; 
             
-        case 60:
+        case 58:
         	viewSent.setImageResource(R.drawable.sentimento_sucesso);
          	break; 
             
-        case 61:
+        case 59:
         	viewSent.setImageResource(R.drawable.sentimento_superacao);
          	break;
               
-        case 62:
+        case 60:
         	viewSent.setImageResource(R.drawable.sentimento_ternura);
         	break;
           
-        case 63:
+        case 61:
         	viewSent.setImageResource(R.drawable.sentimento_tranquilidade);
         	break;
           
-        case 64:
+        case 62:
         	viewSent.setImageResource(R.drawable.sentimento_transformacao);
         	break;
           
-        case 65:
+        case 63:
         	viewSent.setImageResource(R.drawable.sentimento_verdade);
         	break;
             
-        case 66:
+        case 64:
           	viewSent.setImageResource(R.drawable.sentimento_vitoria);
           	break;
                    	
