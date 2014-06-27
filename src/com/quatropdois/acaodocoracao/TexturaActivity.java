@@ -212,6 +212,7 @@ public class TexturaActivity extends Activity
 				Toast.makeText(getApplicationContext(), "Textura não encontrada", Toast.LENGTH_LONG).show();
 				break;
 	      }
+        	onNextButton(view);
         }
     }
     

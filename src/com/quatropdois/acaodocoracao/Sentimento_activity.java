@@ -344,6 +344,7 @@ public class Sentimento_activity extends Activity {
 	          	    
 	      }
         	Log.i("SENTIMENTO", "sentimento: " + sentimento);
+        	onNextButton(view);
 
         }
 

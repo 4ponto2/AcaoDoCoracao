@@ -19,17 +19,6 @@ public class MainActivity extends Activity
 //    private int qtd;
     
     sharedPreference qtdUso;
-    
-	private ImageView 	viewIMG1, 
-						viewIMG2, 
-						viewIMG3, 
-						viewIMG4, 
-						viewIMG5, 
-						viewIMG6, 
-						viewIMG7, 
-						viewIMG8;
-    
-	private	Button	btnNext;
 	
 	private Intent nextScreen;
     
@@ -50,24 +39,6 @@ public class MainActivity extends Activity
         
         qtdUso = new sharedPreference(getApplicationContext());
         
-        viewIMG1 = (ImageView)findViewById(R.id.img1);
-        
-        viewIMG2 = (ImageView)findViewById(R.id.img2);
-        
-        viewIMG3 = (ImageView)findViewById(R.id.img3);
-        
-        viewIMG4 = (ImageView)findViewById(R.id.img4);
-        
-        viewIMG5 = (ImageView)findViewById(R.id.img5);
-        
-        viewIMG6 = (ImageView)findViewById(R.id.img6);
-        
-        viewIMG7 = (ImageView)findViewById(R.id.img7);
-        
-        viewIMG8 = (ImageView)findViewById(R.id.img8);
-        
-        btnNext	= (Button)findViewById(R.id.select);
-        
 //        qtd = qtdUso.getInt("qtduso");
         
     }
@@ -81,104 +52,37 @@ public class MainActivity extends Activity
         	
 	        case R.id.imgBtn1:
 	        	coracao = 1;
-        		viewIMG1 .setVisibility(View.VISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
-        		btnNext .setVisibility(View.VISIBLE);
 	          break;
 	          
 	        case R.id.imgBtn2:
 	        	coracao = 2;
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.VISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
-        		btnNext .setVisibility(View.VISIBLE);
 	          break;
 	          
 	        case R.id.imgBtn3:
 	        	coracao = 3;
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.VISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
-        		btnNext .setVisibility(View.VISIBLE);
 	          break;
 	          
 	        case R.id.imgBtn4:
 	        	coracao = 4;
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.VISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
 	          break;
 	          
 	        case R.id.imgBtn5:
 	        	coracao = 5;
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.VISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
 	          break;
 	          
 	        case R.id.imgBtn6:
 	        	coracao = 6;
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.VISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
 	          break;
 	          
 	        case R.id.imgBtn7:
 	        	coracao = 7;
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.VISIBLE);
-        		viewIMG8 .setVisibility(View.INVISIBLE);
 	          break;
 	          
 	        case R.id.imgBtn8:
 	        	coracao = 8;
-        		viewIMG1 .setVisibility(View.INVISIBLE);
-        		viewIMG2 .setVisibility(View.INVISIBLE);
-        		viewIMG3 .setVisibility(View.INVISIBLE);
-        		viewIMG4 .setVisibility(View.INVISIBLE);
-        		viewIMG5 .setVisibility(View.INVISIBLE);
-        		viewIMG6 .setVisibility(View.INVISIBLE);
-        		viewIMG7 .setVisibility(View.INVISIBLE);
-        		viewIMG8 .setVisibility(View.VISIBLE);
 	          break;
 	          
-	      }
+	      }onNextButton(view);
         }
     }
    
