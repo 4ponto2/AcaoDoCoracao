@@ -36,7 +36,7 @@ public class Principal extends Activity {
     	
     }  
         
-    public void escolher_piroca(View view)
+    public void criaCoracao(View view)
     {
     	if(!wasExecuted){
         	Log.v(null, "countdown started");

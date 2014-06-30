@@ -14,23 +14,46 @@
         android:adjustViewBounds="true"
         android:src="@drawable/tela_entrada" />
 
+<!--     <Button
+        android:id="@+id/geoAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:onClick="geoActivity"
+        android:text="Postos de Doação" />
+
     <Button
         android:id="@+id/btnCoracaoH"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView1"
+        android:layout_above="@+id/geoAction"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp"
+        android:layout_marginBottom="22dp"
         android:onClick="escolher_piroca"
-        android:text="Criar Coração" />
+        android:text="Criar Coração" /> -->
 
-    <Button
-        android:id="@+id/geoAction"
+    <ImageButton
+        android:id="@+id/btn_coracao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnCoracaoH"
+        android:layout_alignLeft="@+id/btn_geo"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/btn_criarcoracao2"
+        android:onClick="criaCoracao"
+        android:src="@drawable/btn_criarcoracao2" />
+
+    <ImageButton
+        android:id="@+id/btn_geo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_coracao"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/btn_geo"
         android:onClick="geoActivity"
-        android:text="Postos de Doação" />
+        android:src="@drawable/btn_geo" />
 
 </RelativeLayout>
