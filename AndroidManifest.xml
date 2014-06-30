@@ -90,7 +90,7 @@
             android:name="com.quatropdois.acaodocoracao.GeoActivity"
             android:label="@string/title_activity_geo"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
         </activity>
         <activity
             android:name="com.quatropdois.acaodocoracao.Tela_Final"
