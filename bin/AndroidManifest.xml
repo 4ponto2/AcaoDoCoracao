@@ -96,6 +96,12 @@
             android:name="com.quatropdois.acaodocoracao.Tela_Final"
             android:label="@string/title_activity_tela__final" >
         </activity>
+         <activity
+            android:name="com.quatropdois.acaodocoracao.CriaCoracao"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:label="@string/title_activity_cria_coracao" >
+        </activity>
     </application>
 
 </manifest>
