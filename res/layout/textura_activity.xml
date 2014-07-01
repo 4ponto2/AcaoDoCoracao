@@ -27,10 +27,10 @@
 
         <ScrollView
             android:id="@+id/HorizontalScrollView1"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_centerHorizontal="true"
-	        android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
             android:layout_below="@+id/imageView1" >
 
             <LinearLayout
@@ -43,206 +43,228 @@
                 android:layout_height="match_parent">
 
             <TableRow
-               	android:layout_height="fill_parent"
-               	android:layout_margin="1dp" >
-                	
-	                <ImageButton
-	                    android:id="@+id/textBtn1"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text1" />
-	
-	                <ImageButton
-	                    android:id="@+id/textBtn2"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text2" />
-	
-	                <ImageButton
-	                    android:id="@+id/textBtn3"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text3" />
-	                
-	        </TableRow>
-	           
-			<TableRow
-               	android:layout_height="fill_parent"
-               	android:layout_margin="1dp" >
-	           
-			    	<ImageButton
-	                    android:id="@+id/textBtn4"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text4" />
-	
-	                <ImageButton
-	                    android:id="@+id/textBtn5"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text5" />
-	
-	                <ImageButton
-	                    android:id="@+id/textBtn6"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text6" />
-	     
-	        </TableRow>
-	           
-			<TableRow
-               	android:layout_height="fill_parent"
-               	android:layout_margin="1dp" >
-	           
-	                <ImageButton
-	                    android:id="@+id/textBtn7"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text7" />
-	
-	                <ImageButton
-	                    android:id="@+id/textBtn8"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text8" />
-	
-	                <ImageButton
-	                    android:id="@+id/textBtn9"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text9" />
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp" >
+                    
+                    <ImageButton
+                        android:id="@+id/textBtn1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/button_bg"
+                        android:onClick="selectCoracao"
+                        android:src="@drawable/text1" />
+    
+                    <ImageButton
+                        android:id="@+id/textBtn2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text2" />
+    
+                    <ImageButton
+                        android:id="@+id/textBtn3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text3" />
+                    
+            </TableRow>
+               
+            <TableRow
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp" >
+               
+                    <ImageButton
+                        android:id="@+id/textBtn4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text4" />
+    
+                    <ImageButton
+                        android:id="@+id/textBtn5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text5" />
+    
+                    <ImageButton
+                        android:id="@+id/textBtn6"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text6" />
+         
+            </TableRow>
+               
+            <TableRow
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp" >
+               
+                    <ImageButton
+                        android:id="@+id/textBtn7"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text7" />
+    
+                    <ImageButton
+                        android:id="@+id/textBtn8"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text8" />
+    
+                    <ImageButton
+                        android:id="@+id/textBtn9"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text9" />
      
-	        </TableRow>
-	           
-			<TableRow
-               	android:layout_height="fill_parent"
-               	android:layout_margin="1dp" >
-	           	
-	                <ImageButton
-	                    android:id="@+id/textBtn10"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text10" />
+            </TableRow>
+               
+            <TableRow
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp" >
+                
+                    <ImageButton
+                        android:id="@+id/textBtn10"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text10" />
 
-	                <ImageButton
-	                    android:id="@+id/textBtn11"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text11" />
-	
-	                <ImageButton
-	                    android:id="@+id/textBtn12"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text12" />
-			
-			</TableRow>
-	           
-			<TableRow
-               	android:layout_height="fill_parent"
-               	android:layout_margin="1dp" >
-	           		
-	                <ImageButton
-	                    android:id="@+id/textBtn13"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text13" />
-	
-	                <ImageButton
-	                    android:id="@+id/textBtn14"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text14" />
-	
-	                <ImageButton
-	                    android:id="@+id/textBtn15"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text15" />
+                    <ImageButton
+                        android:id="@+id/textBtn11"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text11" />
+    
+                    <ImageButton
+                        android:id="@+id/textBtn12"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text12" />
+            
+            </TableRow>
+               
+            <TableRow
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp" >
+                    
+                    <ImageButton
+                        android:id="@+id/textBtn13"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text13" />
+    
+                    <ImageButton
+                        android:id="@+id/textBtn14"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text14" />
+    
+                    <ImageButton
+                        android:id="@+id/textBtn15"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text15" />
 
-			</TableRow>
-	           
-			<TableRow
-               	android:layout_height="fill_parent"
-               	android:layout_margin="1dp" >
-	        
-	                <ImageButton
-	                    android:id="@+id/textBtn16"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text16" />
-	
-	                <ImageButton
-	                    android:id="@+id/textBtn17"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text17" />
-	
-	                <ImageButton
-	                    android:id="@+id/textBtn18"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text18" />
+            </TableRow>
+               
+            <TableRow
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp" >
+            
+                    <ImageButton
+                        android:id="@+id/textBtn16"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text16" />
+    
+                    <ImageButton
+                        android:id="@+id/textBtn17"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text17" />
+    
+                    <ImageButton
+                        android:id="@+id/textBtn18"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text18" />
 
-			</TableRow>
-	           
-			<TableRow
-               	android:layout_height="fill_parent"
-               	android:layout_margin="1dp" >
-	        	
-	                <ImageButton
-	                    android:id="@+id/textBtn19"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text19_" />
-	
-	                <ImageButton
-	                    android:id="@+id/textBtn20"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text20_" />
-	        	
-	                <ImageButton
-	                    android:id="@+id/textBtn21"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text21_" />
-			</TableRow>
-	           
-			<TableRow
-               	android:layout_height="fill_parent"
-               	android:layout_margin="1dp" >
-	                
-	                <ImageButton
-	                    android:id="@+id/textBtn22"
-	                    android:layout_width="100dp"
-	                    android:layout_height="100dp"
-	                    android:onClick="selectCoracao"
-	                    android:src="@drawable/text22_" />
-	         
-			</TableRow>
-	      		</TableLayout>
+            </TableRow>
+               
+            <TableRow
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp" >
+                
+                    <ImageButton
+                        android:id="@+id/textBtn19"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text19_" />
+    
+                    <ImageButton
+                        android:id="@+id/textBtn20"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text20_" />
+                
+                    <ImageButton
+                        android:id="@+id/textBtn21"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text21_" />
+            </TableRow>
+               
+            <TableRow
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp" >
+                    
+                    <ImageButton
+                        android:id="@+id/textBtn22"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="selectCoracao"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/text22_" />
+             
+            </TableRow>
+                </TableLayout>
             </LinearLayout>
         </ScrollView>
 

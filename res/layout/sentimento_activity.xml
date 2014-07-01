@@ -25,611 +25,676 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-                	
-            	    <!-- GRUPO 1 -->
-            	    <Button
-            	        android:id="@+id/BtnSent1"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="Alegria" />
-            		<Button
-            		    android:id="@+id/BtnSent2"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="amigos" />
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent3"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="amizade" />      
-            		<Button
-                		android:id="@+id/BtnSent4"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="amor" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent5"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="amparo" />
-            		<Button
-                		android:id="@+id/BtnSent6"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="apoio" />
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent7"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="axe" />
-            		<Button
-                		android:id="@+id/BtnSent8"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="bondade" />
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		<Button
-                		android:id="@+id/BtnSent9"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="caridade" />                	
-            		<Button
-                		android:id="@+id/BtnSent10"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="carinho" />
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-		            <Button
-        		        android:id="@+id/BtnSent11"
-               			android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="compaixao" />
-            		<Button
-                		android:id="@+id/BtnSent12"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="companheirismo" />
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		<Button
-                		android:id="@+id/BtnSent13"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="compreensao" />
-            		<Button
-                		android:id="@+id/BtnSent14"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="confianca" />
-            	
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent15"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="conforto" />                	
-            		<Button
-                		android:id="@+id/BtnSent16"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="coragem" />
-            	
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent17"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="crescimento" />
-            		<Button
-                		android:id="@+id/BtnSent18"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="cumplicidade" />
-            	
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		          	
-            		<Button
-                		android:id="@+id/BtnSent19"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="cura" />
-            		<Button
-                		android:id="@+id/BtnSent20"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="deus" />
-            	
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-		    	    <Button
-                		android:id="@+id/BtnSent21"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="energia" />
-            		<Button
-                		android:id="@+id/BtnSent22"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="equilibrio" />
-            	    
-            	</TableRow>
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-                	
-            		<Button
-                		android:id="@+id/BtnSent23"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="esperanca" />
-            		<Button
-                		android:id="@+id/BtnSent24"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="espiritualidade" />
-            	
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent25"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="familia" />                	
-            		<Button
-                		android:id="@+id/BtnSent26"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="fartura" />
-            	
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent27"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="fe" />
-            		<Button
-                		android:id="@+id/BtnSent28"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="felicidade" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		                	
-            		<Button
-		                android:id="@+id/BtnSent29"
-        		        android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="forca" />
-            		<Button
-                		android:id="@+id/BtnSent30"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="fraternidade" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent31"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="generosidade" />                		
-            		<Button
-                		android:id="@+id/BtnSent32"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="gentileza" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent33"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="gratidao" />
-            		<Button
-                		android:id="@+id/BtnSent34"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="harmonia" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent35"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="honestidade" />
-            		<Button
-                		android:id="@+id/BtnSent36"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="humildade" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent37"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="igualdade" />
-            		<Button
-                		android:id="@+id/BtnSent38"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="liberdade" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent39"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="luz" />
-            		<Button
-                		android:id="@+id/BtnSent40"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="milagre" />   
-                		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		         
-            		<Button
-                		android:id="@+id/BtnSent41"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="oracao" />
-            		<Button
-                		android:id="@+id/BtnSent42"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="otimismo" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent43"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="paciencia" />
-            		<Button
-                		android:id="@+id/BtnSent44"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="paixao" />
-            	
-            	</TableRow>
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            	
-            		<Button
-                		android:id="@+id/BtnSent45"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="paz" />
-            		<Button
-                		android:id="@+id/BtnSent46"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="perdao" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		                	
-            		<Button
-                		android:id="@+id/BtnSent47"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="perseveranca" />
-            		<Button
-                		android:id="@+id/BtnSent48"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="prosperidade" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent49"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="realizacao" />                	
-            		<Button
-                		android:id="@+id/BtnSent50"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="realizacoes" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-        		    <Button
-                		android:id="@+id/BtnSent51"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="sabedoria" />
-            		<Button
-                		android:id="@+id/BtnSent52"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="saude" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		                		
-            		<Button
-                		android:id="@+id/BtnSent53"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="solidariedade" />
-            		<Button
-                		android:id="@+id/BtnSent54"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="sonhos" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent55"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="sorriso" />                	
-            		<Button
-                		android:id="@+id/BtnSent56"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="sorte" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent57"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="sossego" />
-            		<Button
-                		android:id="@+id/BtnSent58"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="sucesso" />
-            	    
-            	</TableRow>
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp"
-                	android:background="#ffffff" >
-                	
-            		<Button
-                		android:id="@+id/BtnSent59"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="superacao" />
-            		<Button
-                		android:id="@+id/BtnSent60"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="ternura" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-				    <Button
-                		android:id="@+id/BtnSent61"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="tranquilidade" />
-                	
-            		<Button
-                		android:id="@+id/BtnSent62"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="transformacao" />
-            		
-            	</TableRow>	
-            	
-            	<TableRow
-                	android:layout_height="fill_parent"
-                	android:layout_margin="1dp" >
-            		
-            		<Button
-                		android:id="@+id/BtnSent63"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="verdade" />
-            		<Button
-                		android:id="@+id/BtnSent64"
-                		android:layout_width="160dp"
-                		android:layout_height="100dp"
-                		android:onClick="selectSentimento"
-                		android:text="vitoria" />
-            	    
-            	</TableRow>
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <!-- GRUPO 1 -->
+
+                    <Button
+                        android:id="@+id/BtnSent1"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="ALEGRIA" />
+
+                    <Button
+                        android:id="@+id/BtnSent2"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="AMIGOS" />
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent3"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="AMIZADE" />      
+                    <Button
+                        android:id="@+id/BtnSent4"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="AMOR" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent5"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="AMPARO" />
+                    <Button
+                        android:id="@+id/BtnSent6"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="APOIO" />
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent7"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="AXÉ" />
+                    <Button
+                        android:id="@+id/BtnSent8"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="BONDADE" />
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    <Button
+                        android:id="@+id/BtnSent9"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="CARIDADE" />                  
+                    <Button
+                        android:id="@+id/BtnSent10"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="CARINHO" />
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent11"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="COMPAIXÃO" />
+                    <Button
+                        android:id="@+id/BtnSent12"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="COMPANHEIRISMO" />
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    <Button
+                        android:id="@+id/BtnSent13"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="COMPREENSÃO" />
+                    <Button
+                        android:id="@+id/BtnSent14"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="CONFIANÇA" />
+                
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent15"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="CONFORTO" />                  
+                    <Button
+                        android:id="@+id/BtnSent16"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="CORÁGEM" />
+                
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent17"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="CRESCIMENTO" />
+                    <Button
+                        android:id="@+id/BtnSent18"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="CUMPLICIDADE" />
+                
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                                
+                    <Button
+                        android:id="@+id/BtnSent19"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="CURA" />
+                    <Button
+                        android:id="@+id/BtnSent20"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="DEUS" />
+                
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent21"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="ENERGIA" />
+                    <Button
+                        android:id="@+id/BtnSent22"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="EQUILÍBRIO" />
+                    
+                </TableRow>
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent23"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="ESPERÂNÇA" />
+                    <Button
+                        android:id="@+id/BtnSent24"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="ESPIRITUALIDADE" />
+                
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent25"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="FAMÍLIA" />                   
+                    <Button
+                        android:id="@+id/BtnSent26"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="FARTURA" />
+                
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent27"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="FÉ" />
+                    <Button
+                        android:id="@+id/BtnSent28"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="FELICIDADE" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                                        
+                    <Button
+                        android:id="@+id/BtnSent29"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="FORÇA" />
+                    <Button
+                        android:id="@+id/BtnSent30"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="FRATERNIDADE" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent31"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="GENEROSIDADE" />                      
+                    <Button
+                        android:id="@+id/BtnSent32"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="GENTILEZA" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent33"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="GRATIDÃO" />
+                    <Button
+                        android:id="@+id/BtnSent34"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="HARMONIA" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent35"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="HONESTIDADE" />
+                    <Button
+                        android:id="@+id/BtnSent36"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="HUMILDADE" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent37"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="IGUALDADE" />
+                    <Button
+                        android:id="@+id/BtnSent38"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="LIBERDADE" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent39"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="LUZ" />
+                    <Button
+                        android:id="@+id/BtnSent40"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="MILAGRE" />   
+                        
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                             
+                    <Button
+                        android:id="@+id/BtnSent41"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="ORAÇÃO" />
+                    <Button
+                        android:id="@+id/BtnSent42"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="OTIMISMO" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent43"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="PACIÊNCIA" />
+                    <Button
+                        android:id="@+id/BtnSent44"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="PAIXÃO" />
+                
+                </TableRow>
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                
+                    <Button
+                        android:id="@+id/BtnSent45"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="PAZ" />
+                    <Button
+                        android:id="@+id/BtnSent46"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="PERDÃO" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                                        
+                    <Button
+                        android:id="@+id/BtnSent47"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="PERSEVERANCA" />
+                    <Button
+                        android:id="@+id/BtnSent48"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="PROSPERIDADE" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent49"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="REALIZAÇÃO" />                    
+                    <Button
+                        android:id="@+id/BtnSent50"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="REALIZAÇÕES" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent51"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="SABEDORIA" />
+                    <Button
+                        android:id="@+id/BtnSent52"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="SAÚDE" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                                            
+                    <Button
+                        android:id="@+id/BtnSent53"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="SOLIDARIEDADE" />
+                    <Button
+                        android:id="@+id/BtnSent54"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="SONHOS" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent55"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="SORRISO" />                   
+                    <Button
+                        android:id="@+id/BtnSent56"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="SORTE" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent57"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="SOSSEGO" />
+                    <Button
+                        android:id="@+id/BtnSent58"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="SUCESSO" />
+                    
+                </TableRow>
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp">
+                    
+                    <Button
+                        android:id="@+id/BtnSent59"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="SUPERAÇÃO" />
+                    <Button
+                        android:id="@+id/BtnSent60"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="TERNURA" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent61"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="TRANQUILIDADE" />
+                    
+                    <Button
+                        android:id="@+id/BtnSent62"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="TRANSFORMAÇÃO" />
+                    
+                </TableRow> 
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp" >
+                    
+                    <Button
+                        android:id="@+id/BtnSent63"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="VERDADE" />
+                    <Button
+                        android:id="@+id/BtnSent64"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="selectSentimento"
+                        android:background="@drawable/button_bg"
+                        android:text="VITÓRIA" />
+                    
+                </TableRow>
             
-        	</TableLayout>
+            </TableLayout>
         </LinearLayout>
     </ScrollView>
     

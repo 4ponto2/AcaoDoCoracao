@@ -41,6 +41,7 @@
                             android:id="@+id/imgBtn1"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
+                            android:background="@drawable/button_bg"
                             android:onClick="selectCoracao"
                             android:src="@drawable/btn1" />
 
@@ -48,6 +49,7 @@
                             android:id="@+id/imgBtn2"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
+                            android:background="@drawable/button_bg"
                             android:onClick="selectCoracao"
                             android:src="@drawable/btn2" />
 				    
@@ -61,6 +63,7 @@
                             android:id="@+id/imgBtn3"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
+                            android:background="@drawable/button_bg"
                             android:onClick="selectCoracao"
                             android:src="@drawable/btn3" />
 
@@ -68,6 +71,7 @@
                             android:id="@+id/imgBtn4"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
+                            android:background="@drawable/button_bg"
                             android:onClick="selectCoracao"
                             android:src="@drawable/btn4" />
                         
@@ -81,6 +85,7 @@
                             android:id="@+id/imgBtn5"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
+                            android:background="@drawable/button_bg"
                             android:onClick="selectCoracao"
                             android:src="@drawable/btn5" />
 
@@ -88,6 +93,7 @@
                             android:id="@+id/imgBtn6"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
+                            android:background="@drawable/button_bg"
                             android:onClick="selectCoracao"
                             android:src="@drawable/btn6" />
                     </TableRow>
@@ -99,6 +105,7 @@
                         <ImageButton
                             android:id="@+id/imgBtn7"
                             android:layout_width="150dp"
+                            android:background="@drawable/button_bg"
                             android:layout_height="150dp"
                             android:onClick="selectCoracao"
                             android:src="@drawable/btn7" />
@@ -107,6 +114,7 @@
                             android:id="@+id/imgBtn8"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
+                            android:background="@drawable/button_bg"
                             android:onClick="selectCoracao"
                             android:src="@drawable/btn8" />
                     </TableRow>
