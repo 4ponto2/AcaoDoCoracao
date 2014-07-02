@@ -85,6 +85,10 @@ public class GeoActivity extends Activity {
 	
 	private final LatLng LOCATION_SESICUB = new LatLng(-23.9225264,-46.4151948);
 	
+	private final LatLng LOCATION_IGREJALAPA = new LatLng(-23.8827678,-46.4209703);
+	
+	private final LatLng LOCATION_EMAUGUSTO = new LatLng(-23.9594105,-46.2793692);
+	
 //	private final LatLng LOCATION_SANTOS = new LatLng(-23.9593311, -46.3319782);
 	
 //	private GoogleMap map;
@@ -166,6 +170,10 @@ public class GeoActivity extends Activity {
 		googleMap.addMarker(new MarkerOptions().position(LOCATION_COLALFA).title("Colégio Alfa").snippet("Rua Washington, 293/305 – Vila Maia – Guarujá").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
 		googleMap.addMarker(new MarkerOptions().position(LOCATION_SESICUB).title("SESI").snippet("Av. Comendador Francisco Bernardo, 261 – Parque São Luiz – Cubatão").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+		
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_EMAUGUSTO).title("E.M. Augusto Antunes Correa").snippet("Rua Romualdo dos Santos Maíco, 145 - Jardim Boa Esperança").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE)));
+
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_IGREJALAPA).title("Igreja da Lapa").snippet("Av. Nove de Abril, 1947, Cubatão - SP, 11510-000").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 		
 //		CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_SANTOS, 14);
 		
