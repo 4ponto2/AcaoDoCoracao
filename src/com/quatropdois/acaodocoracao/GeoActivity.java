@@ -6,6 +6,8 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -91,6 +93,7 @@ public class GeoActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+        
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_geo);
 		
@@ -100,13 +103,13 @@ public class GeoActivity extends Activity {
 		
 		googleMap.addMarker(new MarkerOptions().position(LOCATION_MUSEU).title("Museu do Café").snippet("Rua XV de Novembro, 95 – Centro – Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_SANTO).title("Santuário Santo Antônio do Valongo").snippet("Largo Marquês de Monte Alegre, s/n – Centro - Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_SANTO).title("Santuário Santo Antônio do Valongo").snippet("Largo Marquês de Monte Alegre, s/n – Centro - Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE)));
 
 		googleMap.addMarker(new MarkerOptions().position(LOCATION_EDUCACAO).title("Secretaria de Educação").snippet("Rua Frei Gaspar, 25 – em frente a Bolsa do Café").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
 		googleMap.addMarker(new MarkerOptions().position(LOCATION_CAMPS).title("CAMPS").snippet("Av. Washington Luis,2 – Vila Matias").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_TRIBUNA).title("Jornal A Tribuna").snippet("Rua João Pessoa, 129 – Centro – Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_TRIBUNA).title("Jornal A Tribuna").snippet("Rua João Pessoa, 129 – Centro – Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE)));
 
 		googleMap.addMarker(new MarkerOptions().position(LOCATION_PREFEIT).title("Prefeitura Municipal de Santos").snippet("Praça Mauá, s/n – Centro - Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
@@ -116,7 +119,7 @@ public class GeoActivity extends Activity {
 
 		googleMap.addMarker(new MarkerOptions().position(LOCATION_COLBARNABE).title("Colégio Barnabé").snippet("Av. São Francisco, Centro – perto da Sabesp").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_BALNEARIO).title("Shopping Parque Balneário").snippet("Av. Ana Costa, 549 – Gonzaga").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_BALNEARIO).title("Shopping Parque Balneário").snippet("Av. Ana Costa, 549 – Gonzaga").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE)));
 
 		googleMap.addMarker(new MarkerOptions().position(LOCATION_AOPH).title("Ao Pharmacêutico").snippet("Rua Galeão Carvalhal, 38 – Gonzaga – Santos").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
@@ -142,7 +145,7 @@ public class GeoActivity extends Activity {
 
 		googleMap.addMarker(new MarkerOptions().position(LOCATION_FLORIKE).title("Floricultura Ikebana").snippet("Rua Euclides da Cunha").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_TVTRIBU).title("TV Tribuna").snippet("Av. Antonio Emmerick, 1373 – Jardim Três Estrelas – S. Vicente").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_TVTRIBU).title("TV Tribuna").snippet("Av. Antonio Emmerick, 1373 – Jardim Três Estrelas – S. Vicente").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE)));
 
 		googleMap.addMarker(new MarkerOptions().position(LOCATION_PINACOT).title("Pinacoteca Benedito Calixto").snippet("Av. Bartolomeu de Gusmão, 15 Boqueirão").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
@@ -156,7 +159,7 @@ public class GeoActivity extends Activity {
 
 		googleMap.addMarker(new MarkerOptions().position(LOCATION_HOSPGUIL).title("Hospital Guilherme Álvaro").snippet("Rua Dr. Oswaldo Cruz, 197 – Boqueirão").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-		googleMap.addMarker(new MarkerOptions().position(LOCATION_ADESAF).title("ADESAF").snippet("R. Guarany, 70, São Vicente - SP, 11360-000").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+		googleMap.addMarker(new MarkerOptions().position(LOCATION_ADESAF).title("ADESAF").snippet("R. Guarany, 70, São Vicente - SP, 11360-000").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE)));
 
 		googleMap.addMarker(new MarkerOptions().position(LOCATION_APAE).title("APAE").snippet("Rua Feliciana Marcondes da Silva, 205 – Catiapoã").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
@@ -167,6 +170,10 @@ public class GeoActivity extends Activity {
 //		CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_SANTOS, 14);
 		
 //		map.animateCamera(update);
+		
+		AdView adView = (AdView)this.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 		
 		setUpMap();
 	}

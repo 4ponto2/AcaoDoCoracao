@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class Principal extends Activity {
 
 	private boolean wasExecuted = false;
@@ -16,9 +19,13 @@ public class Principal extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		init();
+		
 		setContentView(R.layout.principal);
     	super.onCreate(savedInstanceState);
+        AdView adView = (AdView)this.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+    	init();
 	}
     
     public void init()

@@ -1,6 +1,9 @@
 package com.quatropdois.acaodocoracao;
 
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,8 +25,14 @@ public class MainActivity extends Activity
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainactivity);
+        
+    	AdView adView = (AdView)this.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+        
         init();
 //        nextScreen = new Intent(getApplicationContext(), TexturaActivity.class);
     	nextScreen = new Intent(getApplicationContext(), TexturaActivity.class);

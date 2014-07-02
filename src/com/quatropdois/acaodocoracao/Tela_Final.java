@@ -29,17 +29,20 @@ public class Tela_Final extends Activity {
 	private Final_textura_palabra texturas_final;
 	
 	private MontareSalvarImage montagem;
+	
+	private Intent principal;
 
 	private Uri uri;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+        
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_final);
 		
         texturas_final = new Final_textura_palabra(this);
 		
 		montagem = new MontareSalvarImage(this);
-
+		
 		init();
 		
 		montaCoracao();
@@ -56,6 +59,8 @@ public class Tela_Final extends Activity {
         coracao = (int) extras.getInt("coracao");
         textura = (int) extras.getInt("textura");
         sentimento = (int) extras.getInt("sentimento");
+        
+        principal = new Intent(getApplicationContext(), Principal.class);
         
     }	
 
@@ -89,9 +94,15 @@ public class Tela_Final extends Activity {
     
     public void onBackPressed(){
         Tela_Final.this.finish();
-        android.os.Process.killProcess(android.os.Process.myPid());
-        System.exit(0);
-        getParent().finish();
+        startActivity(principal);
+//        android.os.Process.killProcess(android.os.Process.myPid());
+//        System.exit(0);
+//        getParent().finish();
+    }
+    
+    public void onBackDraw(View view){
+    	Tela_Final.this.finish();
+        startActivity(principal);
     }
     
     public void shareImage() {

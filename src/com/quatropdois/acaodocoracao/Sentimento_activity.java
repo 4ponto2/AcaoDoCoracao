@@ -1,5 +1,8 @@
 package com.quatropdois.acaodocoracao;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,6 +34,10 @@ public class Sentimento_activity extends Activity {
 
     	nextScreen = new Intent(getApplicationContext(), CriaCoracao.class);
     	
+    	AdView adView = (AdView)this.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+        
     	init();
 
 	}
@@ -205,11 +212,52 @@ public class Sentimento_activity extends Activity {
 	        	sentimento = 29;
 //	        	texturas.texturas(coracao, textura);
 	          break;
-	          
+	        
 	        case R.id.BtnSent30:
 	        	sentimento = 30;
 //	        	texturas.texturas(coracao, textura);
-	          break;	 
+	          break;
+	          
+	        case R.id.BtnSent31:
+	        	sentimento = 31;
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	        case R.id.BtnSent32:
+	        	sentimento = 32;
+//	        	texturas.texturas(coracao, textura);
+	          break;	
+	        case R.id.BtnSent33:
+	        	sentimento = 33;
+//	        	texturas.texturas(coracao, textura);
+	          break;	
+	        case R.id.BtnSent34:
+	        	sentimento = 34;
+//	        	texturas.texturas(coracao, textura);
+	          break;	
+	        case R.id.BtnSent35:
+	        	sentimento = 35;
+//	        	texturas.texturas(coracao, textura);
+	          break;	
+	        case R.id.BtnSent36:
+	        	sentimento = 36;
+//	        	texturas.texturas(coracao, textura);
+	          break;	
+	        case R.id.BtnSent37:
+	        	sentimento = 37;
+//	        	texturas.texturas(coracao, textura);
+	          break;	
+	        case R.id.BtnSent38:
+	        	sentimento = 38;
+//	        	texturas.texturas(coracao, textura);
+	          break;	
+	        case R.id.BtnSent39:
+	        	sentimento = 39;
+//	        	texturas.texturas(coracao, textura);
+	          break;	
+	        case R.id.BtnSent40:
+	        	sentimento = 40;
+//	        	texturas.texturas(coracao, textura);
+	          break;	
 	          
 	        case R.id.BtnSent41:
 	        	sentimento = 41;

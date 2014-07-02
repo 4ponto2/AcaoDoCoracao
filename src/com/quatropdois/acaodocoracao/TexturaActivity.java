@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class TexturaActivity extends Activity
 {
     
@@ -27,6 +30,11 @@ public class TexturaActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.textura_activity);
+        
+    	AdView adView = (AdView)this.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+        
         init();
 //        texturas = new Texturas(this);
     	nextScreen = new Intent(getApplicationContext(), Sentimento_activity.class);
