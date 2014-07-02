@@ -5,12 +5,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/tela_fundo"
     android:baselineAligned="false"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".Tela_Final" >        
+    tools:context=".Tela_Final" >
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:adjustViewBounds="true"
@@ -41,13 +42,14 @@
         android:layout_alignParentLeft="true"
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-8073268566643671/6237372741"/>
-    
+
     <ImageView
         android:id="@+id/bottom_telafinal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/adView"
         android:layout_alignParentLeft="true"
-        android:src="@drawable/tela_share" />    
+        android:adjustViewBounds="true"
+        android:src="@drawable/tela_share" />
         
 </RelativeLayout>
