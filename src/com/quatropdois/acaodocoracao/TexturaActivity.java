@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,49 +42,6 @@ public class TexturaActivity extends Activity
         Bundle extras = iin.getExtras();
         coracao = (int) extras.getInt("coracao");
 
-//        switch (coracao) {
-//        case 1:
-//        	viewCor.setImageResource(R.drawable.img1);
-//        	viewCor.setVisibility(View.VISIBLE);
-//			break;
-//        case 2:
-//        	viewCor.setImageResource(R.drawable.img2);
-//        	viewCor.setVisibility(View.VISIBLE);
-//        	break;
-//        	
-//        case 3:
-//        	viewCor.setImageResource(R.drawable.img3);
-//        	viewCor.setVisibility(View.VISIBLE);        	
-//        	break;
-//        	
-//        case 4:
-//        	viewCor.setImageResource(R.drawable.img4);
-//        	viewCor.setVisibility(View.VISIBLE);
-//        	break;
-//        	
-//        case 5:
-//        	viewCor.setImageResource(R.drawable.img5);
-//        	viewCor.setVisibility(View.VISIBLE);        	
-//        	break;
-//        	
-//        case 6:
-//        	viewCor.setImageResource(R.drawable.img6);
-//        	viewCor.setVisibility(View.VISIBLE);
-//        	break;
-//        	
-//        case 7:
-//        	viewCor.setImageResource(R.drawable.img7);
-//        	viewCor.setVisibility(View.VISIBLE);
-//        	break;
-//        	
-//        case 8:
-//        	viewCor.setImageResource(R.drawable.img8);
-//        	viewCor.setVisibility(View.VISIBLE);        	
-//        	break;
-//        	
-//		default:
-//			break;
-//		}
         
     }
     
@@ -228,7 +184,151 @@ public class TexturaActivity extends Activity
 	        	onNextButton(view);
 //	        	texturas.texturas(coracao, textura);
 	          break;
-	        	
+	          
+	        case R.id.textBtn23:
+	        	textura = 23;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn24:
+	        	textura = 24;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn25:
+	        	textura = 25;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn26:
+	        	textura = 26;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn27:
+	        	textura = 27;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn28:
+	        	textura = 28;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn29:
+	        	textura = 29;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn30:
+	        	textura = 30;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn31:
+	        	textura = 31;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn32:
+	        	textura = 32;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn33:
+	        	textura = 33;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn34:
+	        	textura = 34;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn35:
+	        	textura = 35;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn36:
+	        	textura = 36;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn37:
+	        	textura = 37;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn38:
+	        	textura = 38;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn39:
+	        	textura = 39;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn40:
+	        	textura = 40;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn41:
+	        	textura = 41;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn42:
+	        	textura = 42;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn43:
+	        	textura = 43;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn44:
+	        	textura = 44;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn45:
+	        	textura = 45;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
+	        case R.id.textBtn46:
+	        	textura = 46;
+	        	onNextButton(view);
+//	        	texturas.texturas(coracao, textura);
+	          break;
+	          
 			default:
 				Toast.makeText(getApplicationContext(), "Textura não encontrada", Toast.LENGTH_LONG).show();
 				break;

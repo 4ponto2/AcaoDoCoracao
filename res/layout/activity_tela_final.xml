@@ -1,11 +1,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fcdfe1"
+    android:background="@drawable/tela_fundo"
     android:baselineAligned="false"
     android:orientation="vertical"
-    tools:context=".Tela_Final" >    
+    tools:context=".Tela_Final" >        
 
         <ImageView
             android:id="@+id/imageView1"
@@ -13,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:adjustViewBounds="true"
-            android:src="@drawable/top_logo" />
+            android:src="@drawable/compartilhe" />
         
     	<ImageView
         	android:id="@+id/img_cor"
@@ -31,5 +32,22 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="66dp"
             android:visibility="gone" />
-
+    
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8073268566643671/6237372741"/>
+    
+    <ImageView
+        android:id="@+id/bottom_telafinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/tela_share" />    
+        
 </RelativeLayout>

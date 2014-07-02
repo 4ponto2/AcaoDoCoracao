@@ -28,5 +28,6 @@
     <string name="title_activity_geo">GeoActivity</string>
     <string name="title_activity_tela__final">Tela_Final</string>
     <string name="title_activity_cria_coracao">CriaCoracao</string>
+    <string name="title_activity_splash_screen">Splash_screen</string>
 
 </resources>
