@@ -853,14 +853,7 @@ int menu principal 0x7f0c0004
 int menu sentimento_activity 0x7f0c0005
 int menu splash_screen 0x7f0c0006
 int menu tela__final 0x7f0c0007
-int raw barkloud 0x7f050000
-int raw cat 0x7f050001
-int raw costura_1 0x7f050002
-int raw cow 0x7f050003
-int raw explosion 0x7f050004
-int raw laser 0x7f050005
-int raw pickup 0x7f050006
-int raw rooster 0x7f050007
+int raw costura_1 0x7f050000
 int string Contagem_shakes 0x7f06002a
 int string Principal_apresentacao 0x7f060029
 int string action_settings 0x7f060022
