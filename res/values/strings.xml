@@ -22,6 +22,7 @@
     <color name="red">#e2005a</color>
     <color name="CornflowerBlue">#6495ED</color>
     <color name="FundoAcaoCoracao">#fcdfe1</color>
+    <color name="CorDeTexto">#dc4b59</color>
 
     <string name="title_activity_sentimento_activity">Sentimento_activity</string>
     <string name="title_activity_final_heart_">Compartilhe</string>
@@ -29,5 +30,29 @@
     <string name="title_activity_tela__final">Tela_Final</string>
     <string name="title_activity_cria_coracao">CriaCoracao</string>
     <string name="title_activity_splash_screen">Splash_screen</string>
+    <string name="title_activity_a_acao_activity">A Ação do Coração</string>
+    <string name="title_activity_aacao">A Ação do Coração</string>
+    <string name="texto_aAcao_titulo">Ação do Coração</string>
+    
+    <string name="texto_aAcao_1">Surgiu como uma homenagem ao ator santista Eduardo Furkini em 2012 e é uma celebração de amor, de esperança, de fé e de doação que reúne milhares de pessoas em diversos lugares do Brasil e em outros países, sempre no dia dois de agosto. A Ação foi criada e é realizada pela Associação que leva o nome do ator e há uma grande mobilização onde as pessoas reúnem-se para confeccionar corações de tecido de várias cores e tamanhos, recheados com uma boa intenção. Além de fazerem doações que colaborem com Instituições de auxílio e caridade, Organizações Não Governamentais e com as Secretarias de Ação Social do município participante.</string>
+    <string name="texto_aAcao_2">O ponto alto da “Ação do Coração” é a distribuição em praça pública dos corações confeccionados e une dezenas de milhares de pessoas em uma consagração ecumênica pela paz, pela união dos povos e principalmente pela vida.</string>
+    <string name="texto_aAcao_3">Em Santos, o dia 2 de agosto passou a figurar no calendário oficial da cidade pois A Lei Municipal Nº 2.884 de 19 de dezembro de 2012, instituiu o “Dia da Ação do Coração”. </string>
+    
+    <string name="title_activity_aassociacao">Associação Eduardo Furkini</string>
+    <string name="texto_Assoc_1">A Associação Eduardo Furkini-AEF, fundada em 27 de setembro de 2011, é uma sociedade civil sem fins lucrativos, que nasceu do desejo de manter viva a memória de José Eduardo Gonçalvez, em artes - Eduardo Furkini.</string>
+    <string name="texto_assoc_2">O objetivo social da AEF é atender jovens a partir dos 18 anos por meio de concessão de bolsas de estudos prioritariamente para a formação em profissões ligadas a saúde, turismo, idiomas, contadores de histórias, artes e esportes. </string>
+    
+    <string name="historico">Histórico</string>
+    <string name="texto_assoc_3">concedidas dezenas de bolsas para o curso de contadores de história e de incentivo à música. Desse trabalho inicial surgiram os grupos: Semeando Histórias e Quarteto de Cordas Eduardo Furkini, motivo de muita alegria para a AEF.</string>
+    
+    <string name="semeando">Grupo Semeando Histórias</string>
+    <string name="texto_assoc_4">O Grupo Semeando Histórias foi criado pela AEF, em maio de 2012. Seu objetivo é levar a arte de narrar histórias às pessoas que são atendidas em instituições como casas de repouso, creches, escolas e hospitais.</string>
+    
+    <string name="quarteto">Quarteto de Cordas Eduardo Furkini</string>
+    <string name="texto_assoc_5">O Quarteto de Cordas Eduardo Furkini foi formado pela AEF em setembro de 2012 com o objetivo de oportunizar a formação musical e artística, proporcionando desenvolvimento pessoal e viabilizando a profissionalização de jovens talentos. </string>
+    
+    <string name="eduardo_furkini">Eduardo Furkini</string>
+    <string name="texto_assoc_6">Eduardo Furkini possuía muitas habilidades profissionais. Atuou em vários espetáculos adultos e infantis, performances, filmes e vídeos institucionais. Foi responsável por levar pela primeira vez ao teatro milhares de crianças na década de 1990 através da Cia. De Teatro “Era Uma Vez” com o projeto “A Escola vai ao Teatro”.</string>
+    
 
 </resources>

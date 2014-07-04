@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    tools:context="com.quatropdois.acaodocoracao.AassociacaoActivity" >
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8073268566643671/6237372741"/>
+
+    <ScrollView
+        android:id="@+id/VerticalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:layout_above="@+id/adView">
+        
+            
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0dp" >            
+                    
+        			<TextView
+        			    android:id="@+id/editTextTop1"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:ems="10"
+        			    android:gravity="center_horizontal"
+        			    android:paddingBottom="5dp"
+        			    android:paddingLeft="15dp"
+        			    android:paddingRight="15dp"
+        			    android:paddingTop="5dp"
+        			    android:layout_marginTop="5dp"
+        			    android:scrollHorizontally="false"
+        			    android:text="@string/title_activity_aassociacao"
+        			    android:textColor="@color/CorDeTexto"
+        			    android:textSize="30sp" >
+					</TextView>
+				</TableRow>                
+				                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0dp" >            
+                    
+        			<TextView
+        			    android:id="@+id/editText1"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:ems="10"
+        			    android:gravity="center_horizontal"
+        			    android:paddingBottom="5dp"
+        			    android:paddingLeft="15dp"
+        			    android:paddingRight="15dp"
+        			    android:paddingTop="5dp"
+        			    android:scrollHorizontally="false"
+        			    android:text="@string/texto_Assoc_1"
+        			    android:textColor="@color/CorDeTexto"
+        			    android:textSize="15sp" >
+					</TextView>
+				</TableRow>
+		
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0dp" >            
+                    
+        			<TextView
+        			    android:id="@+id/editTextTop2"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:ems="10"
+        			    android:gravity="center_horizontal"
+        			    android:paddingBottom="5dp"
+        			    android:paddingLeft="15dp"
+        			    android:paddingRight="15dp"
+        			    android:paddingTop="10dp"
+        			    android:scrollHorizontally="false"
+        			    android:text="@string/historico"
+        			    android:textColor="@color/CorDeTexto"
+        			    android:textSize="30sp" >
+					</TextView>
+				</TableRow>
+				                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0dp" >            
+                    
+        			<TextView
+        			    android:id="@+id/editText3"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:layout_marginTop="0dp"
+        			    android:ems="10"
+        			    android:gravity="center_horizontal"
+        			    android:paddingBottom="5dp"
+        			    android:paddingLeft="15dp"
+        			    android:paddingRight="15dp"
+        			    android:paddingTop="5dp"
+        			    android:scrollHorizontally="false"
+        			    android:text="@string/texto_assoc_3"
+        			    android:textColor="@color/CorDeTexto"
+        			    android:textSize="15sp" >
+
+					</TextView>
+				</TableRow>				
+				
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0dp" >            
+                    
+        			<TextView
+        			    android:id="@+id/editTextTop3"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:ems="10"
+        			    android:gravity="center_horizontal"
+        			    android:paddingBottom="5dp"
+        			    android:paddingLeft="15dp"
+        			    android:paddingRight="15dp"
+        			    android:paddingTop="10dp"
+        			    android:scrollHorizontally="false"
+        			    android:text="@string/semeando"
+        			    android:textColor="@color/CorDeTexto"
+        			    android:textSize="30sp" >
+					</TextView>
+				</TableRow>
+				                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0dp" >            
+                    
+        			<TextView
+        			    android:id="@+id/editText4"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:ems="10"
+        			    android:gravity="center_horizontal"
+        			    android:paddingBottom="5dp"
+        			    android:paddingLeft="15dp"
+        			    android:paddingRight="15dp"
+        			    android:paddingTop="5dp"
+        			    android:scrollHorizontally="false"
+        			    android:text="@string/texto_assoc_4"
+        			    android:textColor="@color/CorDeTexto"
+        			    android:textSize="15sp" >
+					</TextView>
+				</TableRow>
+				
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0dp" >            
+                    
+        			<TextView
+        			    android:id="@+id/editTextTop4"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:ems="10"
+        			    android:gravity="center_horizontal"
+        			    android:paddingBottom="5dp"
+        			    android:paddingLeft="15dp"
+        			    android:paddingRight="15dp"
+        			    android:paddingTop="10dp"
+        			    android:scrollHorizontally="false"
+        			    android:text="@string/quarteto"
+        			    android:textColor="@color/CorDeTexto"
+        			    android:textSize="30sp" >
+					</TextView>
+				</TableRow>
+				                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0dp" >            
+                    
+        			<TextView
+        			    android:id="@+id/editText5"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:ems="10"
+        			    android:gravity="center_horizontal"
+        			    android:paddingBottom="5dp"
+        			    android:paddingLeft="15dp"
+        			    android:paddingRight="15dp"
+        			    android:paddingTop="5dp"
+        			    android:scrollHorizontally="false"
+        			    android:text="@string/texto_assoc_5"
+        			    android:textColor="@color/CorDeTexto"
+        			    android:textSize="15sp" >
+					</TextView>
+				</TableRow>                
+				                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0dp" >            
+                    
+        			<TextView
+        			    android:id="@+id/editTextTop5"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:ems="10"
+        			    android:gravity="center_horizontal"
+        			    android:paddingBottom="5dp"
+        			    android:paddingLeft="15dp"
+        			    android:paddingRight="15dp"
+        			    android:paddingTop="10dp"
+        			    android:scrollHorizontally="false"
+        			    android:text="@string/eduardo_furkini"
+        			    android:textColor="@color/CorDeTexto"
+        			    android:textSize="30sp" >
+					</TextView>
+				</TableRow>
+				                
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0dp" >            
+                    
+        			<TextView
+        			    android:id="@+id/editText6"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:ems="10"
+        			    android:gravity="center_horizontal"
+        			    android:paddingBottom="5dp"
+        			    android:paddingLeft="15dp"
+        			    android:paddingRight="15dp"
+        			    android:paddingTop="5dp"
+        			    android:layout_marginBottom="5dp"
+        			    android:scrollHorizontally="false"
+        			    android:text="@string/texto_assoc_6"
+        			    android:textColor="@color/CorDeTexto"
+        			    android:textSize="15sp" >
+					</TextView>
+				</TableRow>                
+			</TableLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+                    

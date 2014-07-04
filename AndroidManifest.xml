@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.quatropdois.acaodocoracao"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="3"
+    android:versionName="3.0" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -19,7 +19,7 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <!--
          The following two permissions are not required to use
-	     Google Maps Android API v2, but are recommended.
+	     Google Maps Android API v2, but are recommended.
     -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -33,83 +33,89 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
-<!--         <meta-data
-    	android:name="com.google.android.maps.v2.API_KEY"
-    	android:value="AIzaSyBdOUzBDTLJx1Qpyz6r4rsxZg0Cnm5hMrA"/> -->
 
-	<meta-data
+        <!--
+             <meta-data
     	android:name="com.google.android.maps.v2.API_KEY"
-    	android:value="AIzaSyCwEGplqfgiFIjcfLSiStTAiRqKukFKXw4"/>
- 
- 		<!-- API GMAPS FIM -->
- 		
+    	android:value="AIzaSyBdOUzBDTLJx1Qpyz6r4rsxZg0Cnm5hMrA"/>
+        -->
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCwEGplqfgiFIjcfLSiStTAiRqKukFKXw4" />
+
+        <!-- API GMAPS FIM -->
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-        
+
         <activity
-            android:name="com.quatropdois.acaodocoracao.Splash_screen"
+            android:name=".Splash_screen"
+            android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:label="@string/app_name" 
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>            
-        
+        </activity>
         <activity
-            android:name="com.quatropdois.acaodocoracao.Principal"
+            android:name=".Principal"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
         </activity>
-        
         <activity
-            android:name="com.quatropdois.acaodocoracao.MainActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
         </activity>
-        
         <activity
-            android:name="com.quatropdois.acaodocoracao.TexturaActivity"
+            android:name=".TexturaActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
         </activity>
-        
         <activity
-            android:name="com.quatropdois.acaodocoracao.Sentimento_activity"
+            android:name=".Sentimento_activity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
         </activity>
-        
         <activity
-            android:name="com.quatropdois.acaodocoracao.FinalHeart_Activity"
+            android:name=".FinalHeart_Activity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
-        
         <activity
-            android:name="com.quatropdois.acaodocoracao.GeoActivity"
+            android:name=".GeoActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
         </activity>
-        
         <activity
-            android:name="com.quatropdois.acaodocoracao.Tela_Final"
-            android:screenOrientation="portrait"
-            android:label="@string/app_name" >
+            android:name=".Tela_Final"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
-        
         <activity
-            android:name="com.quatropdois.acaodocoracao.CriaCoracao"
+            android:name=".CriaCoracao"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
         </activity>
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name=".AAcaoActivity"
+            android:label="@string/title_activity_aacao"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AassociacaoActivity"
+            android:label="@string/title_activity_aassociacao"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>

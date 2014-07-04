@@ -12,7 +12,7 @@ import com.google.android.gms.ads.AdView;
 public class Principal extends Activity {
 
 	private boolean wasExecuted = false;
-    private Intent mainActivity, geoActivity;
+    private Intent mainActivity, geoActivity, aAcao, associacao;
     
 
     sharedPreference qtdUso;
@@ -32,15 +32,14 @@ public class Principal extends Activity {
     {
     	mainActivity = new Intent(getApplicationContext(), MainActivity.class);
     	geoActivity  = new Intent(getApplicationContext(), GeoActivity.class);
-//    	mainActivity = new Intent(getApplicationContext(), TexturaActivity.class);
+    	aAcao  = new Intent(getApplicationContext(), AAcaoActivity.class);
+    	associacao  = new Intent(getApplicationContext(), AassociacaoActivity.class);
         wasExecuted = false;
     }
     
     public void reinicio_contador(View view){
-    	
     	qtdUso = new sharedPreference(getApplicationContext());
-    	qtdUso.remove("qtduso");
-    	
+    	qtdUso.remove("qtduso");    	
     }  
         
     public void criaCoracao(View view)
@@ -57,6 +56,18 @@ public class Principal extends Activity {
     	startActivity(geoActivity);
     	
     }
+    
+    public void associacao(View view){
+    	
+    	startActivity(associacao);
+    	
+    }
+    
+    public void aacao(View view){
+    	
+    	startActivity(aAcao);
+    	
+    }    
 
     public void onBackPressed(){
     	   Log.i("HA", "Finishing");
@@ -65,22 +76,5 @@ public class Principal extends Activity {
     	   intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     	   startActivity(intent);
     }
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-//	public static class PlaceholderFragment extends Fragment {
-//
-//		public PlaceholderFragment() {
-//		}
-//
-//		@Override
-//		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//				Bundle savedInstanceState) {
-//			View rootView = inflater.inflate(R.layout.principal, container,
-//					false);
-//			return rootView;
-//		}
-//	}
 
 }

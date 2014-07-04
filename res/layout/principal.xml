@@ -49,6 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
         android:layout_alignParentLeft="true"
         android:layout_alignTop="@+id/btn_geo"
         android:background="@drawable/btn_criarcoracao2"
@@ -56,15 +57,36 @@
         android:src="@drawable/btn_criarcoracao2" />
 
     <ImageButton
+        android:id="@+id/btn_associacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_aAcao"
+        android:layout_alignLeft="@+id/btn_geo"
+        android:background="@drawable/botoes"
+        android:onClick="associacao"
+        android:src="@drawable/botoes" />
+
+    <ImageButton
         android:id="@+id/btn_geo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="15dp"
-        android:layout_above="@+id/adView"
+        android:layout_above="@+id/btn_aAcao"
+        android:layout_marginBottom="5dp"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
         android:background="@drawable/btn_geo"
         android:onClick="geoActivity"
         android:src="@drawable/btn_geo" />
+
+    <ImageButton
+        android:id="@+id/btn_aAcao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/btn_coracao"
+        android:background="@drawable/oqueeacao"
+        android:onClick="aacao"
+        android:src="@drawable/oqueeacao" />
 
 </RelativeLayout>
